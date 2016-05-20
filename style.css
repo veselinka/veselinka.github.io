@@ -1,0 +1,211 @@
+html{
+	height: 100%;
+}
+
+/*#wrapper{
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+*/
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+	height: 100%;
+}
+header{
+	text-align: center;
+	height: 50px;
+}
+
+img.imgLogo{
+	float: left;
+}
+img,h1 {
+	display: inline;
+}
+span{
+	float: right;
+}
+nav{
+	text-align: center;
+	width: 200px;
+}
+
+li.navig {
+	display: inline;
+}
+div,span,a,p,ul,footer{
+	font-size:20px;
+}
+aside{
+	width: 30%;
+	float: left;
+	display: block;
+}
+section{
+	width: 70%;
+	float: right;
+	display: block;
+}
+
+article span {
+	text-align: justify;
+}
+section.reg{
+	width: 100%;
+}
+li.products{
+	display: inline-block;
+}
+p.aboutUs{
+	text-align: justify;
+}
+select{
+	font-size:16px;
+}
+
+img.descript{
+	float: left;
+	display: inline;
+}
+div.buy{
+	display: inline;
+}
+
+fieldset{
+	font-size: 20px;
+}
+
+label.label {
+	width:200px;
+	display: inline-block;
+}
+
+.hor-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff3300;
+	width: 1100px;
+}
+
+.hor-nav li {
+	float: left;
+	display: inline;
+}
+
+.hor-nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navigation{
+	width: 200px;
+}
+
+
+
+.firstArticle{
+	height: 350px;
+}
+
+div.clear{
+	clear: both;
+}
+
+table.descr-name{
+	margin: auto;
+}
+
+/*
+fieldset legend { display: none; }
+*/
+
+/*
+
+.ver-nav,.submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ver-nav a {
+  display: block;
+  background-color: #CCC;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+.ver-nav a:hover {
+    background-color: #C5C5C5;
+}
+
+.ver-nav li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+
+.submenu a {
+  background-color: #999;
+}
+
+.submenu a:hover {
+  background-color: #666;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+
+*/
+
+
+
+
+.menu {
+	overflow: auto; position:relative; z-index:2; 
+}
+.parent-menu {
+	background-color: #ff3300; min-width:200px; float:left;
+	}
+	 .menu ul { 
+		list-style-type:none; 
+	}
+	.menu ul li a { 
+		padding:10px 15px; display:block; color:#fff; text-decoration:none;
+	}
+	.menu ul li a:hover
+	{ 
+		background-color:#007ee9; 
+	}
+
+
+
+
+
+
+
+
+
+
+	footer{
+		display: block;
+		bottom:0px;
+		float: left;
+		width: 1100px;
+		text-align: center;
+	}
