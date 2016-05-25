@@ -114,7 +114,6 @@ label.label {
 }
 
 
-
 .firstArticle{
 	height: 350px;
 }
@@ -130,49 +129,6 @@ table.descr-name{
 /*
 fieldset legend { display: none; }
 */
-
-/*
-
-.ver-nav,.submenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.ver-nav a {
-  display: block;
-  background-color: #CCC;
-  text-decoration: none;
-  padding: 10px;
-  color: #000;
-}
-
-.ver-nav a:hover {
-    background-color: #C5C5C5;
-}
-
-.ver-nav li:hover .submenu {
-  display: block;
-  max-height: 200px;
-}
-
-
-.submenu a {
-  background-color: #999;
-}
-
-.submenu a:hover {
-  background-color: #666;
-}
-
-.submenu {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: all 0.5s ease-out;
-}
-
-
-*/
-
 
 
 
@@ -192,14 +148,6 @@ fieldset legend { display: none; }
 	{ 
 		background-color:#007ee9; 
 	}
-
-
-
-
-
-
-
-
 
 
 	footer{
