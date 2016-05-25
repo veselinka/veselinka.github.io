@@ -6,55 +6,63 @@
 	<meta name="description" content="online shop">
 	<meta name="keywords" content="online shopping, clothes">
 	<meta name="author" content="Veselinka Blazheva">
-	<link rel="icon" href="img/vip favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="img/vip-favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<img src="img/logo.png" alt="logo" width="150" height="50" title="online-shop-logo" class="imgLogo"/>
-		<h1>Онлайн Магазин ВИП</h1>
-		<span>
-			<a href="login.html">Вход</a><br><a href="register.html">Регистрация</a>
-		</span>
-	</header>
-	<nav>
-		<ul class="hor-nav">
-			<li class="navig"><a href="index.html"> Начало</a></li>
-			<li class="navig"><a href="damsko.html"> Дамски дрехи</a></li>
-			<li class="navig"><a href="mujko.html"> Мъжки дрехи</a></li>
-			<li class="navig"><a href="detsko.html"> Детски дрехи</a></li>
-			<li class="navig"><a href="promotions.html"> Промоции</a></li>
-			<li class="navig"><a href="contacts.html"> Контакти</a></li>
-			<li class="navig"><a href="aboutUs.html"> За нас </a></li>
-		</ul>
-	</nav>
-	<section class="reg">
-		<div class="contact">
-			<h1>Свържете се с нас</h1>
-			<form method="post" action="">
+	<div id="wrapper">
+		<header>
+			<img src="img/logo.png" alt="logo" width="150" height="50" title="online-shop-logo" class="imgLogo"/>
+			<h1>Онлайн Магазин ВИП</h1>
+			<span>
+				<a href="login.html">Вход</a><br><a href="register.html">Регистрация</a>
+			</span>
+		</header>
+		<nav>
+			<ul class="hor-nav">
+				<li class="navig"><a href="index.html"> Начало</a></li>
+				<li class="navig"><a href="damsko.html"> Дамски дрехи</a></li>
+				<li class="navig"><a href="mujko.html"> Мъжки дрехи</a></li>
+				<li class="navig"><a href="detsko.html"> Детски дрехи</a></li>
+				<li class="navig"><a href="promotions.html"> Промоции</a></li>
+				<li class="navig"><a href="contacts.html"> Контакти</a></li>
+				<li class="navig"><a href="aboutUs.html"> За нас </a></li>
+				<li class="search">
+					<form method="post" action="#">
+						<input type="search">
+						<input type="button" name="search" value="Търсене">
+					</form>
+				</li>
+			</ul>
+		</nav>
+		<section class="reg">
+			<div class="contact">
+				<header><h2>Свържете се с нас</h2></header>
+				<form method="post" action="#">
 
-				<label for="name" class="label">Име:</label>
-				<input id="name" type="text" name="name"><br>
+					<label for="name" class="label">Име:</label>
+					<input id="name" type="text" name="name"><br>
 
-				<label for="phone" class="label">Телефон:</label>
-				<input id="phone" type="tel"><br>
+					<label for="phone" class="label">Телефон:</label>
+					<input id="phone" type="tel"><br>
 
-				<label for="mail" class="label">E-mail:</label>
-				<input id="mail" type="email" name="email"><br>
+					<label for="mail" class="label">E-mail:</label>
+					<input id="mail" type="email" name="email"><br>
 
-				<label for="message" class="label">Съобщение:</label>
-				<textarea rows="8" cols="60"></textarea> <br>
+					<label for="message" class="label">Съобщение:</label>
+					<textarea rows="8" cols="60"></textarea> <br>
 
-				<label for="myfile" class="label">Прикачи файл:</label>
-				<input type="file" id="myFile"><br>
+					<label for="myfile" class="label">Прикачи файл:</label>
+					<input type="file" id="myFile"><br>
 
-				<p><input type="submit" name="commit" value="Изпрати"></p>
-			</form>
-		</div>
-	</section>
-	<footer>
-		<hr/>
-		<p> &copy; Всички права запазени!</p>
-	</footer>
+					<p><input type="submit" name="commit" value="Изпрати"></p>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<hr/>
+			<p> &copy; Всички права запазени!</p>
+		</footer>
+	</div>
 </body>
 </html>

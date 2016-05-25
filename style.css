@@ -2,25 +2,19 @@ html{
 	height: 100%;
 }
 
-/*#wrapper{
+#wrapper{
     border: none;
-    width: 100%;
-    max-width: 100%;
+    width: 70%;
     min-height: 100%;
     padding-bottom: 20px;
     overflow: hidden;
+    margin: auto;
 }
-*/
 
-body{
-	margin-left: auto;
-	margin-right: auto;
-	width: 1100px;
-	height: 100%;
-}
 header{
 	text-align: center;
 	height: 50px;
+	width: auto;
 }
 
 img.imgLogo{
@@ -34,7 +28,10 @@ span{
 }
 nav{
 	text-align: center;
-	width: 200px;
+	width: 100%;
+}
+ul.hor-nav li.search{
+	float: right;
 }
 
 li.navig {
@@ -43,6 +40,32 @@ li.navig {
 div,span,a,p,ul,footer{
 	font-size:20px;
 }
+
+ul.hor-nav {
+	float: left;
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff3300;
+	width: 100%;
+}
+
+
+ul.hor-nav li {
+	float: left;
+	display: inline;
+}
+
+ul.hor-nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
 aside{
 	width: 30%;
 	float: left;
@@ -54,20 +77,30 @@ section{
 	display: block;
 }
 
+
 article span {
 	text-align: justify;
 }
 section.reg{
 	width: 100%;
 }
+
+
 li.products{
 	display: inline-block;
+	margin-left: 2.5%;
+	margin-right: 2,5%;
+	width: 30%;
 }
+li.promo{
+		display: inline-block;
+}
+
 p.aboutUs{
 	text-align: justify;
 }
 select{
-	font-size:16px;
+	font-size:1em;
 }
 
 img.descript{
@@ -79,7 +112,7 @@ div.buy{
 }
 
 fieldset{
-	font-size: 20px;
+	font-size: 1em;
 }
 
 label.label {
@@ -87,30 +120,11 @@ label.label {
 	display: inline-block;
 }
 
-.hor-nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #ff3300;
-	width: 1100px;
-}
 
-.hor-nav li {
-	float: left;
-	display: inline;
-}
 
-.hor-nav li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
 
 .navigation{
-	width: 200px;
+	width: 100%;
 }
 
 
@@ -125,6 +139,19 @@ div.clear{
 table.descr-name{
 	margin: auto;
 }
+
+fieldset.fieldset{
+	width: 50%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div.login, div.contact{
+	width: 50%;
+	margin: auto;	
+}
+
+
 
 /*
 fieldset legend { display: none; }
@@ -154,6 +181,6 @@ fieldset legend { display: none; }
 		display: block;
 		bottom:0px;
 		float: left;
-		width: 1100px;
+		width: 100%;
 		text-align: center;
 	}
