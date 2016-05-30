@@ -7,7 +7,7 @@
 	<meta name="keywords" content="online shopping, clothes">
 	<meta name="author" content="Veselinka Blazheva">
 	<link rel="icon" href="img/vip-favicon.ico" type="image/x-icon"/>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -81,23 +81,24 @@
 					<input id="mail" type="email" name="email" required><br>
 
 					<label for="message" class="label">Съобщение:</label>
-					<textarea rows="8" cols="60" name="comments" required></textarea> <br>
+					<textarea rows="8" cols="60" name="comments" required id="textarea"></textarea> <br>
 
 					<label for="myfile" class="label">Прикачи файл:</label>
 					<input type="file" id="myFile"><br>
 
-					<p><input type="submit" name="commit" value="Изпрати"></p>
+					<p><input type="submit" name="commit" value="Изпрати" class="button"></p>
 				</form>
 			</div>
 		</section>
 		<footer>
 			<hr/>
-			<ul >
+			<ul id="footerNav">
 				<li><a href="index.html">Начало</a> </li>
 				<li><a href="contacts.html"> Контакти</a> </li>
 				<li><a href="aboutUs.html"> За нас </a></li>
 			</ul>
 			<p> &copy; Всички права запазени!</p>
+			<p> &trade; 2016</p>
 		</footer>
 	</div>
 </body>
