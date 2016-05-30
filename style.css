@@ -1,75 +1,8 @@
-
-/*Start of Reset*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*End of Reset*/
-
 html{
 	height: 100%;
 }
-body{
-	font-family:;
-	line-height: 1.5;
-}
 
-
-h1 {
-	font-size: 2em;font-weight: bold;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-}
-h2 { font-size: 1.5em;font-weight: bold;	padding-top: 0.5em;}
-h3 { font-size: 1.17em;font-weight: bold;	padding-top: 0.5em;
-	padding-bottom: 0.5em;}
-h4 {font-size: 1.00em;font-weight: bold;}
-h5 { font-size: 0.83em;font-weight: bold;}
-h6 { font-size: 0.67em; font-weight: bold;}
-
-
-
-div#wrapper{
+#wrapper{
     border: none;
     width: 75%;
     min-height: 100%;
@@ -81,7 +14,7 @@ div#wrapper{
 header{
 	text-align: center;
 	height: 50px;
-	width: 100%;
+	width: auto;
 }
 
 img.imgLogo{
@@ -96,65 +29,36 @@ span{
 nav{
 	text-align: center;
 	width: 100%;
-	margin-bottom: 110px;
 }
-
-div.promotions ul{
-	display: inline;
-	float: left;
-	list-style-type: none;
-}
-
-div.promotions ul li{
-	display: inline;
-	float: left;
-	margin-right: 5px;
-	background-color: blue;
-	margin-bottom: 20px;
-}
-div.promotions ul li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 5px 10px;
-	margin: 5px;
-	text-decoration: none;
-}
-
-
-
 ul.hor-nav li.search{
 	float: right;
-	display: inline;
 }
 
+li.navig {
+	display: inline;
+}
 div,span,a,p,ul,footer{
 	font-size:20px;
 }
 
 ul.hor-nav {
 	float: left;
-	display: block;
+	display: inline;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 	background-color: #ff3300;
 	width: 100%;
-
-
 }
 
-ul.hor-nav li.navig {
+
+ul.hor-nav li {
 	float: left;
-	display: block;
-	margin-right: 1px;
-
+	display: inline;
 }
 
-
-
-
-nav ul.hor-nav li.navig a {
+ul.hor-nav li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -162,98 +66,15 @@ nav ul.hor-nav li.navig a {
 	text-decoration: none;
 }
 
-
-ul.hor-nav {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  padding: 15px 4px 17px 0;
-  list-style: none;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
-ul.hor-nav>li {
-  font: bold 12px/18px sans-serif;
-  display: inline-block;
-  margin-right: -4px;
-  position: relative;
-  padding: 5px 10px;
-  background: #ff3300;
-
-  color: #fff;
-}
-
-ul.hor-nav> li:hover {
-  background: #007ee9;
-  color: #fff;
-}
-
-
-ul.hor-nav li ul {
-  padding: 0;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 150px;
-  margin-top: 9px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 5;
-}
-
-ul.hor-nav li ul li {
-  background: #007ee9;
-  display: block;
-  color: #fff;
-}
-
-ul.hor-nav li ul li:hover { background: #ff3300; }
-
-ul.hor-nav li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-ul.hor-nav li.search:hover { background: none; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 aside{
-	width: 25%;
+	width: 30%;
 	float: left;
 	display: block;
-	z-index: 1;
 }
 section{
-	width: 75%;
+	width: 70%;
 	float: right;
 	display: block;
-	z-index: 1;
 }
 
 
@@ -265,22 +86,14 @@ section.reg{
 }
 
 
-.products{
+li.products{
 	display: inline-block;
 	margin-left: 2.5%;
 	margin-right: 2,5%;
 	width: 30%;
 }
-
-
-}
 li.promo{
-		display: block;	
-		float: left;
-}
-div.promo-product{
-	width: 200px;
-	float: left;
+		display: inline-block;
 }
 
 p.aboutUs{
@@ -289,48 +102,14 @@ p.aboutUs{
 select{
 	font-size:1em;
 }
-div.img-opacity{
-	display: block;
-	position: relative;
+
+img.descript{
 	float: left;
-	clear: both;
+	display: inline;
 }
-
-/*** effect - image opacity ***/
-
-.img-opacity img {position:absolute;top:0px;right:0px;bottom:0px;left:0px}
-
-.img-opacity .img-1 {opacity:1}
-.img-opacity .img-2 {opacity:0}
-.img-opacity:hover .img-1 {opacity:0}
-.img-opacity:hover .img-2 {opacity:1}
-
-.img-opacity img
-{
-transition:all .6s ease-in-out;
--webkit-transition:all .6s ease-in-out;
--moz-transition:all .6s ease-in-out;
--ms-transition:all .6s ease-in-out;
--o-transition:all .6s ease-in-out;
-}
-
-.img-opacity:hover img
-{
-transition:all 1.2s ease-in-out;
--webkit-transition:all 1.2s ease-in-out;
--moz-transition:all 1.2s ease-in-out;
--ms-transition:all 1.2s ease-in-out;
--o-transition:all 1.2s ease-in-out;
-}
-
 div.buy{
-	display: block;
-	position: relative;
-	left:40%;
+	display: inline;
 }
-
-
-
 
 fieldset{
 	font-size: 1em;
@@ -341,43 +120,6 @@ label.label {
 	display: inline-block;
 }
 
-/*
-
-img.image{
-	position: relative;
-}
-img.finished{
-	position: absolute;
-	bottom: 0px;
-	padding:auto;
-	width:200px;
-}
-
-*/
-
-div.productBox{
-	margin-top:  20px;
-	position: relative;
-	left: 0;
-	right: 0;
-}
-
-div.productBox img {
-transition:all .2s ease-in-out;
--webkit-transition:all .2s ease-in-out;
--moz-transition:all .2s ease-in-out;
--ms-transition:all .2s ease-in-out;
--o-transition:all .2s ease-in-out;
-}
-
-div.productBox:hover img 
-{
-transform:scale(1.1);
--webkit-transform:scale(1.1);
--moz-transform:scale(1.1);
--ms-transform:scale(1.1);
--o-transform:scale(1.1)
-}
 
 
 
@@ -408,11 +150,6 @@ div.login, div.contact{
 	width: 50%;
 	margin: auto;	
 }
-.descript{
-	display: inline;
-float: left;
-	position: absolute;
-}
 
 
 
@@ -426,7 +163,7 @@ fieldset legend { display: none; }
 	overflow: auto; position:relative; z-index:2; 
 }
 .parent-menu {
-	background-color: #ff3300; width:80%; float:left;
+	background-color: #ff3300; min-width:200px; float:left;
 	}
 	 .menu ul { 
 		list-style-type:none; 
@@ -439,17 +176,6 @@ fieldset legend { display: none; }
 		background-color:#007ee9; 
 	}
 
-#gashterizon{
-position: relative; top: 0; left: 0; z-index: -1;
-}
-
-#finished{
-	position: absolute; top: 150px; left: 10px;z-index: 1;
-}
-
-
-
-
 
 	footer{
 		display: block;
@@ -458,44 +184,3 @@ position: relative; top: 0; left: 0; z-index: -1;
 		width: 100%;
 		text-align: center;
 	}
-footer ul{
-	display: inline;
-}
-footer ul li{
-	border-right: solid;
-	display: inline;
-	margin-left: 1px;
-	margin-right: 1px;
-}
-footer ul li:last-child{
-	border-right: none;
-}
-
-
-
-
-
-
-
-div.pictureContainer {
-  	margin-bottom: 10px;
-	background-position: center top;
-	background-repeat: no-repeat;
-	width: 160px;
-}
-#sinia-tunika{
-	background-image: url('img/bluza1.jpg');
-	image-rendering: width = 200px height=300px;
-}
-#sinia-tunika:hover{
-	background-image: url('img/sinia-tunika2.jpg');
-	width: 200px;
-	height: 300px;
-}
-
-/*Hack for heading color in mozzila */
-@-moz-document url-prefix() {
-    h1 {
-        color: blue;
-    }
-/*End of Hack  */
