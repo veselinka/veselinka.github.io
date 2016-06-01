@@ -1,0 +1,45 @@
+
+
+/* @import Rule */
+
+
+@import url(style.css) all and (min-width: 1080px) {...}
+
+@media screen and (max-width: 1080px) and (min-width: 960px) {
+  body {
+
+  }
+}
+
+section,
+aside {
+  margin: 0;
+}
+@media all and (max-width: 1080px) and (min-width: 960px) {
+  .container {
+    max-width: 100% ;
+  }
+  section {
+    float: right;
+    width: 65%;
+  }
+  aside {
+    float: left;
+    width: 35%;
+  }
+h1 {
+	font-size: 1.5em;font-weight: bold;
+
+}
+h2 {
+	font-size: 1em;
+	font-weight: bold;
+
+}
+h3 {
+	font-size: 0.87em;
+	font-weight: bold;
+
+}
+
+
