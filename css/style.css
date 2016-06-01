@@ -59,8 +59,7 @@ html{
 body{
 	font-family: 'Comfortaa', cursive;
 	line-height: 1.5;
-
-	 color: $primary-color;
+	color: $primary-color;
 }
 
 
@@ -97,8 +96,8 @@ th{
 	font-weight: bold;	
 }
 th:nth-child(1) {
-    background: #007ee9;
-    color: #fff;
+	background: #007ee9;
+	color: #fff;
 }
 
 
@@ -115,14 +114,14 @@ ul#footerNav a:link, ul#footerNav a:visited{
 	color: black;
 }
 
-  p#clickHere a:link, p#clickHere a:visited {
-    color: red;
+p#clickHere a:link, p#clickHere a:visited {
+	color: red;
 }
-  ul#footerNav a:hover, p#clickHere a:hover {
-    color: skyblue;
+ul#footerNav a:hover, p#clickHere a:hover {
+	color: skyblue;
 }
-  ul#footerNav a:active, p#clickHere a:active {
-    color: blue;
+ul#footerNav a:active, p#clickHere a:active {
+	color: blue;
 }
 div#wrapper{
 	border: none;
@@ -204,22 +203,53 @@ nav{
 	animation-delay: 25s;
 }
 @-webkit-keyframes css-carousel-fade {
-    0%, 20%, 100% { opacity: 0; }
-    5%, 15% { opacity: 1;}
+	0%, 20%, 100% { opacity: 0; }
+	5%, 15% { opacity: 1;}
 }
 @-moz-keyframes css-carousel-fade {
-    0%, 20%, 100% { opacity: 0; }
-    5%, 15% { opacity: 1;}
+	0%, 20%, 100% { opacity: 0; }
+	5%, 15% { opacity: 1;}
 }
 @-ms-keyframes css-carousel-fade {
-    0%, 20%, 100% { opacity: 0; }
-    5%, 15% { opacity: 1;}
+	0%, 20%, 100% { opacity: 0; }
+	5%, 15% { opacity: 1;}
 }
 @keyframes css-carousel-fade {
 	0%, 20%, 100% { opacity: 0; }
 	5%, 15% { opacity: 1;}
 }
 /*Карусел-край*/
+
+
+@keyframes rubberBand {
+	0% {transform: scale(1);}
+	30% {transform: scaleX(1.25) scaleY(0.75);}
+	40% {transform: scaleX(0.75) scaleY(1.25);}
+	60% {transform: scaleX(1.15) scaleY(0.85);}
+	100% {transform: scale(1);}
+}
+.rubberBand {
+	animation-name: rubberBand;
+	animation-duration: 1s;
+}
+
+
+
+@keyframes pulse {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.1);}
+	100% {transform: scale(1);}
+
+}
+.pulse {
+	animation-name: pulse;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+	animation-iteration-count: infinite;
+	color: red;
+	letter-spacing: 10px;
+	text-shadow: 2px 2px #FF0000;
+}
 
 
 
@@ -240,7 +270,7 @@ div.promotions ul li{
 	margin-right: 5px;
 	background-color: #007ee9;
 	margin-bottom: 20px;
-		border: 1px solid blue;
+	border: 1px solid blue;
 	border-radius: 10px;
 }
 div.promotions ul li a {
@@ -368,77 +398,82 @@ section h2, section h3{
 
 
 div.flex-container {
-    display: inline-flex;
-    flex-wrap:wrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
+	display: inline-flex;
+	flex-wrap:wrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+div.flex-down{
+	-webkit-flex-direction: column; /* Safari */
+	flex-direction:         column;
+	text-align: center;
 }
 
 
 .borderimg{
 	border: 10px solid transparent;
-    padding: 20px;
-    width: 250px;
-    height: 150px;
-    text-align: center;
-    font-size: 16px;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    color: blue;
-    box-sizing: border-box;
+	padding: 20px;
+	width: 250px;
+	height: 150px;
+	text-align: center;
+	font-size: 16px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	color: blue;
+	box-sizing: border-box;
 
 }
 
 .borderimg:first-child {
-  -webkit-border-image: url(../img/border-image1.png) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border-image1.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(../img/border-image1.png) 30 round;
-  }
+	-webkit-border-image: url(../img/border-image1.png) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../img/border-image1.png) 30 round; /* Opera 11-12.1 */
+	border-image: url(../img/border-image1.png) 30 round;
+}
 
 
 .borderimg:nth-child(2) {
- -webkit-border-image: url(../img/border-image2.png) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border-image2.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(../img/border-image2.png) 30 round;
+	-webkit-border-image: url(../img/border-image2.png) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../img/border-image2.png) 30 round; /* Opera 11-12.1 */
+	border-image: url(../img/border-image2.png) 30 round;
 
 }
 
 .borderimg:nth-child(3){
-	   -webkit-border-image: url(../img/border-image3.png) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border-image3.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(../img/border-image3.png) 30 round;
+	-webkit-border-image: url(../img/border-image3.png) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../img/border-image3.png) 30 round; /* Opera 11-12.1 */
+	border-image: url(../img/border-image3.png) 30 round;
 }
 
 .borderimg:nth-child(4){
-    -webkit-border-image: url(../img/border-image4.png) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../img/border-image4.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(../img/border-image4.png) 30 round;
+	-webkit-border-image: url(../img/border-image4.png) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../img/border-image4.png) 30 round; /* Opera 11-12.1 */
+	border-image: url(../img/border-image4.png) 30 round;
 }
 
 .backImage{
 	background: url(../img/backImage1.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 2px solid grey;
-    width: 250px;
-    height: 150px;
-    border: 10px solid transparent;
-    padding: 20px;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border: 2px solid grey;
+	width: 250px;
+	height: 150px;
+	border: 10px solid transparent;
+	padding: 20px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+	font-size: 16px;
+	text-align: center;
 }
 
 
 
 
 div.multiColumn{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    margin: 20px 10px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	margin: 20px 10px;
 }
 
 
@@ -463,14 +498,14 @@ div.promo-product{
 	margin-right: 10px;
 }
 .downPicture {
- position: relative; 
- top: 0; 
- left: 0; 
- }
-  .upPicture {
-  position: absolute;
-   top: 0px;
-  right: 0px; 
+	position: relative; 
+	top: 0; 
+	left: 0; 
+}
+.upPicture {
+	position: absolute;
+	top: 0px;
+	right: 0px; 
 
 }
 p.aboutUs{
@@ -667,6 +702,13 @@ div.pictureContainer {
 	color: white;
 
 }
+
+
+
+
+
+
+
 
 /*Hack for heading color in mozzila */
 @-moz-document url-prefix() {
