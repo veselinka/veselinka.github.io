@@ -47,6 +47,17 @@ table {
 /*End of Reset*/
 
 
+
+
+
+
+
+
+
+
+
+
+
 $primary-color: red;
 
 
@@ -122,6 +133,17 @@ div.clear{
 
 /*End of explanations*/
 
+
+
+
+
+
+
+
+
+
+
+
 /*Header*/
 
 header{
@@ -148,14 +170,23 @@ header span{
 	display: inline;
 
 }
-/*End of header*/
+
+
+
+
+
+
+
+
+
+
 
 /*Start of Navigation*/
 
 nav{
 	text-align: center;
 	width: 100%;
-	height: 50px;
+
 	margin-bottom: 30px;
 	display: inline-block;
 }
@@ -204,8 +235,6 @@ ul.hor-nav li ul {
 	left: 0;
 	width: 150px;
 	margin-bottom: 1px;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
 	display: none;
 	opacity: 0;
@@ -234,7 +263,20 @@ ul.hor-nav li.search:hover {
 	background: none; 
 }
 
-/*End of Navigation*/
+
+span.plus{
+	
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Start of Aside*/
 
@@ -256,20 +298,24 @@ aside{
 .menu ul { 
 	list-style-type:none; 
 }
-.menu ul li{
-	padding-left: 20px;
+.menu ul li {
+	padding-left: 10px;
 }
 .menu ul li a { 
 	padding:10px 15px;
 	display:block;
 	color:#fff; text-decoration:none;
 }
-.menu ul li a:hover
-{ 
+.menu ul li a:hover { 
 	background-color:#007ee9; 
 }
 
-/*End of Aside*/
+
+
+
+
+
+
 
 
 
@@ -439,7 +485,8 @@ p.aboutUs{
 li.products{
 	display: inline-block;
 	margin-left: 2.5%;
-	margin-right: 2,5%;
+	margin-right: 2.5%;
+	margin-bottom: 10px;
 	width: 30%;
 }
 
@@ -724,24 +771,6 @@ ul#footerNav a:active, p#clickHere a:active {
 
 
 
-/*  Moje bi veche ne go izpolzvam :D :D :D
-
-div.pictureContainer {
-	margin-bottom: 10px;
-	background-position: center top;
-	background-repeat: no-repeat;
-	width: 160px;
-}
-#sinia-tunika{
-	background-image: url('img/bluza1.jpg');
-	image-rendering: width = 200px height=300px;
-}
-#sinia-tunika:hover{
-	background-image: url('img/sinia-tunika2.jpg');
-	width: 200px;
-	height: 300px;
-}  
-	*/
 
 
 /*Hack for heading color in mozzila */
@@ -755,3 +784,6 @@ div.pictureContainer {
 
 
 
+harmb {
+	display: none;
+}
