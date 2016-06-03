@@ -114,7 +114,7 @@ th{
 	font-weight: bold;	
 }
 th:nth-child(1) {
-	background: #007ee9;
+	background: #AEAEAE;
 	color: #fff;
 }
 
@@ -129,10 +129,17 @@ div,span,a,p,ul,footer{
 div.clear{
 	clear: both;
 }
+div.responsiveNav{
+	display: none;
+	border: 1px solid grey;
+}
 
 
 /*End of explanations*/
-
+img.menuButton{
+	display: inline;
+	margin: 5px;
+}
 
 
 
@@ -193,7 +200,7 @@ nav{
 ul.hor-nav {
 	float: left;
 	list-style-type: none;
-	background-color: #ff3300;
+	background-color: #D3D3D3;
 	width: 100%;
 	display: inline;
 	margin: 0;
@@ -207,7 +214,7 @@ ul.hor-nav>li {
 	display: inline-block;
 	position: relative;
 	padding: 10px 5px;
-	background: #ff3300;
+	background: #D3D3D3;
 	color: #fff;
 	float: left;
 	
@@ -225,7 +232,7 @@ nav ul.hor-nav li.search{
 	display: inline;
 }
 ul.hor-nav> li:hover {
-	background: #007ee9;
+	background: #AEAEAE;
 	color: #fff;
 }
 ul.hor-nav li ul {
@@ -243,21 +250,21 @@ ul.hor-nav li ul {
 	border-top: 1px solid red;
 }
 ul.hor-nav li ul li {
-	background: #007ee9;
+	background: #AEAEAE;
 	display: block;
 	color: #fff;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 ul.hor-nav li ul li:hover {
-	background: #ff3300; 
+	background: #D3D3D3; 
 }
 
-ul.hor-nav li:hover ul {
+/* ul.hor-nav li:hover ul {
 	display: block;
 	opacity: 1;
 	visibility: visible;
-}
+} */
 
 ul.hor-nav li.search:hover {
 	background: none; 
@@ -291,7 +298,7 @@ aside{
 	overflow: auto; position:relative; z-index:2; 
 }
 .parent-menu {
-	background-color: #ff3300; 
+	background-color: #D3D3D3; 
 	width:80%; 
 	float:left;
 }
@@ -307,7 +314,7 @@ aside{
 	color:#fff; text-decoration:none;
 }
 .menu ul li a:hover { 
-	background-color:#007ee9; 
+	background-color:#AEAEAE; 
 }
 
 
@@ -492,6 +499,7 @@ li.products{
 
 div.productBox{
 	margin-top:  20px;
+	margin:auto;
 	position: relative;
 	left: 0;
 	right: 0;
@@ -508,6 +516,7 @@ div.productBox img {
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	margin:auto;
 }
 
 div.productBox:hover img 
@@ -524,12 +533,18 @@ div.productBox:hover img
 	text-indent: 0px;
 	position: absolute;
 	top: 310px;
+	text-align: center;
 }
 /**End of Categories**/
 /***Start of description pages***/
 .firstArticle{
 	height: 350px;
 }
+div.image{
+	width: 50%;
+}
+
+
 img.descript{
 	display: inline;
 	float: left;
@@ -540,19 +555,23 @@ img.descript{
 select{
 	font-size:1em;
 }
+.fontSize{
+	font-size:0.75em;
+}
 
 button.button{
 	width: 60px;
 	height: 30px;
-	background-color: #007ee9;
+	background-color: #AEAEAE;
 	border: 1px solid blue;
 	color: white;
 }
 div.buy{
-	display: block;
+	display: inline;
 	position: relative;
-	left:40%;
 	margin-top: 40px;
+	width: 30%;
+	left: 50%;
 }
 
 #gashterizon{
@@ -582,7 +601,7 @@ div.promotions ul li{
 	display: inline;
 	float: left;
 	margin-right: 5px;
-	background-color: #007ee9;
+	background-color: #AEAEAE;
 	margin-bottom: 20px;
 	border: 1px solid blue;
 	border-radius: 10px;
@@ -620,6 +639,33 @@ div.promo-product{
 	right: 0px; 
 
 }
+
+
+div.flex-description {
+	display: inline-flex;
+	flex-wrap:wrap;
+}
+div.snimka{
+	width: 50%;
+	display: inline;
+}
+div.kupi{
+	width: 50%;
+	display: inline;
+}
+div.information{
+	width: 100%;
+	display: inline;
+}
+div.dostavka{
+	width: 100%;
+	display: inline;
+}
+
+
+
+
+
 /****End of promotions page****/
 /*****Start of Voucher page*****/
 
