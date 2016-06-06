@@ -16,6 +16,7 @@ $( document ).ready(function() {
         $(this).parent().siblings().children('ul').removeClass('open');
     	$(this).parent().children('ul').toggleClass('open');
 
+
     });
 
 
@@ -28,12 +29,7 @@ $( document ).ready(function() {
         }
         e.preventDefault();
     });
-
-
-
-
 });
-
 
 
 

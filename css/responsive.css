@@ -2,6 +2,9 @@
 
 
 
+
+
+
 /* TABLETS */
 @media all and (max-width: 1080px){
 	body {
@@ -56,7 +59,7 @@ text-align: center;
 
 
 }
-header h1 {
+body header h1 {
 display: none;
 width: 0%;
 }
@@ -89,6 +92,9 @@ p{
   font-size: 0.75em;
   margin: 0px 10px;
 }
+a{
+  font-size: 1em;
+}
 a.links{
   font-size: 0.75em;
   margin-left: 10px;
@@ -96,7 +102,12 @@ a.links{
 nav.horizontal{
   display: none;
 }
-
+nav.hamburger{
+  display: block;
+}
+div,span,a,p,ul,footer{
+  font-size:16px;
+}
 
 /*Responsive Navigation*/
 
@@ -206,7 +217,7 @@ ul.hor-nav li ul {
   opacity: 0;
   visibility: hidden;
   z-index: 5;
-  border-top: 1px solid red;
+
 }
 ul.hor-nav li ul li {
   background: #AEAEAE;
@@ -221,11 +232,16 @@ ul.hor-nav li ul li:hover {
   background: #D3D3D3; 
 }
 
-/* ul.hor-nav li:hover ul {
+
+/*Tova beshe zakomentirano*/
+
+ ul.hor-nav li:hover ul {
   display: none;
   opacity: 1;
   visibility: visible;
-} */
+} 
+
+
 
 ul.hor-nav li ul.open {
   display: block;
@@ -242,8 +258,12 @@ span.plus{
   right: 10px;
   float: right;
   position: absolute;
-    top: 0px;
+  height: 100%;
+  top: 0px;
+  font-size: 20px;
 }
+
+
 /*End of Hamburger*/
 
 
@@ -267,7 +287,7 @@ img.descript{
 
 
 select{
-  font-size:0.75em;
+  font-size:0.90em;
 }
 .buy select{
   font.size: 0.75em;
@@ -278,24 +298,41 @@ div.buy{
   display: inline;
   position: relative;
   margin-top: 40px;
-  width: 30%;
-  left: 45%;
+  width: 100%;
+  float: left;
+  margin-left: 10%;
+}
+
+
+summary img{
+  width: 300px; 
+  height: 125px;
 }
 
 
 
+/*Promo page*/
 
 
+li.promo{
+  width: 100%; 
+  left: 25%;
+  right: 25%
+}
+
+div.promo-product{
+  width: 100%;
+  margin: auto;
+  float: left;
+  position: relative; 
+  left: 25%;
+  right: 25%
+  top: 0px;
+  margin-right: 2%;
+}
 
 
-
-
-
-
-
-
-
-
+/*End of Promo page*/
 
 
 

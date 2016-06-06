@@ -133,6 +133,10 @@ div.responsiveNav{
 	display: none;
 	border: 1px solid grey;
 }
+nav.hamburger{
+	display: none;
+}
+
 
 
 /*End of explanations*/
@@ -247,7 +251,6 @@ ul.hor-nav li ul {
 	opacity: 0;
 	visibility: hidden;
 	z-index: 5;
-	border-top: 1px solid red;
 }
 ul.hor-nav li ul li {
 	background: #AEAEAE;
@@ -260,19 +263,19 @@ ul.hor-nav li ul li:hover {
 	background: #D3D3D3; 
 }
 
-/* ul.hor-nav li:hover ul {
+ ul.hor-nav li:hover ul {
 	display: block;
 	opacity: 1;
 	visibility: visible;
-} */
+} 
 
 ul.hor-nav li.search:hover {
 	background: none; 
 }
 
 
-span.plus{
-	
+table{
+	margin: auto;
 }
 
 
@@ -504,7 +507,7 @@ div.productBox{
 	left: 0;
 	right: 0;
 	width: 200px;
-	height: 330px;
+	height: 350px;
 }
 
 div.productBox img {
@@ -537,6 +540,7 @@ div.productBox:hover img
 }
 /**End of Categories**/
 /***Start of description pages***/
+
 .firstArticle{
 	height: 350px;
 }
@@ -555,23 +559,21 @@ img.descript{
 select{
 	font-size:1em;
 }
-.fontSize{
-	font-size:0.75em;
-}
+
 
 button.button{
 	width: 60px;
 	height: 30px;
 	background-color: #AEAEAE;
-	border: 1px solid blue;
+	border: 1px solid grey;
 	color: white;
 }
 div.buy{
 	display: inline;
 	position: relative;
 	margin-top: 40px;
-	width: 30%;
-	left: 50%;
+	left: 40%;
+
 }
 
 #gashterizon{
@@ -589,6 +591,7 @@ div.buy{
 
 /***End of description pages***/
 /****Start of promotions page****/
+
 div.promotions ul{
 	display: inline;
 	float: left;
@@ -603,7 +606,7 @@ div.promotions ul li{
 	margin-right: 5px;
 	background-color: #AEAEAE;
 	margin-bottom: 20px;
-	border: 1px solid blue;
+	border: 1px solid grey;
 	border-radius: 10px;
 }
 div.promotions ul li a {
@@ -621,12 +624,12 @@ li.promo{
 }
 
 div.promo-product{
-	width: 150px;
+	width: 45%;
 	float: left;
 	position: relative; 
 	left: 0px;
 	top: 0px;
-	margin-right: 10px;
+	margin-right: 2%;
 }
 .downPicture {
 	position: relative; 
@@ -636,7 +639,7 @@ div.promo-product{
 .upPicture {
 	position: absolute;
 	top: 0px;
-	right: 0px; 
+	left: 100px; 
 
 }
 
@@ -662,6 +665,12 @@ div.dostavka{
 	display: inline;
 }
 
+summary img{
+  width: 600px; 
+  height: 250px;
+
+}
+
 
 
 
@@ -672,8 +681,7 @@ div.dostavka{
 div.flex-container {
 	display: inline-flex;
 	flex-wrap:wrap;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px;
 }
 div.flex-down{
 	-webkit-flex-direction: column; /* Safari */
@@ -691,36 +699,13 @@ div.flex-down{
 	font-size: 16px;
 	margin-right: 1em;
 	margin-bottom: 1em;
-	color: blue;
+	color: black;
 	box-sizing: border-box;
-
-}
-
-.borderimg:first-child {
 	-webkit-border-image: url(../img/border-image1.png) 30 round; /* Safari 3.1-5 */
 	-o-border-image: url(../img/border-image1.png) 30 round; /* Opera 11-12.1 */
 	border-image: url(../img/border-image1.png) 30 round;
 }
 
-
-.borderimg:nth-child(2) {
-	-webkit-border-image: url(../img/border-image2.png) 30 round; /* Safari 3.1-5 */
-	-o-border-image: url(../img/border-image2.png) 30 round; /* Opera 11-12.1 */
-	border-image: url(../img/border-image2.png) 30 round;
-
-}
-
-.borderimg:nth-child(3){
-	-webkit-border-image: url(../img/border-image3.png) 30 round; /* Safari 3.1-5 */
-	-o-border-image: url(../img/border-image3.png) 30 round; /* Opera 11-12.1 */
-	border-image: url(../img/border-image3.png) 30 round;
-}
-
-.borderimg:nth-child(4){
-	-webkit-border-image: url(../img/border-image4.png) 30 round; /* Safari 3.1-5 */
-	-o-border-image: url(../img/border-image4.png) 30 round; /* Opera 11-12.1 */
-	border-image: url(../img/border-image4.png) 30 round;
-}
 
 .backImage{
 	background: url(../img/backImage1.jpg);
@@ -738,12 +723,48 @@ div.flex-down{
 	text-align: center;
 }
 
+.backImage2{
+	background: url(../img/koleda.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border: 2px solid grey;
+	width: 250px;
+	height: 150px;
+	border: 10px solid transparent;
+	padding: 45px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+	font-size: 16px;
+	text-align: center;
+}
+.backImage3{
+	background: url(../img/gift-card1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border: 2px solid grey;
+	width: 250px;
+	height: 150px;
+	border: 10px solid transparent;
+	padding-top: 80px;
+	padding-left: 115px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+	font-size: 16px;
+	text-align: center;
+}
+
+
 /*****End of Voucher page*****/
 /*Start of contacts, about us, reg and logIn*/
 
 section.reg{
 	width: 100%;
 }
+
+
+
 div.login, div.contact{
 	width: 50%;
 	margin: auto;	
