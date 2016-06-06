@@ -58,7 +58,6 @@ table {
 
 
 
-$primary-color: red;
 
 
 /*Start of CCS explanations after reset*/
@@ -87,7 +86,7 @@ h1 {
 	padding-bottom: 0.5em;
 }
 h2 {
-	font-size: 1.5em;
+	font-size: 20px;
 	font-weight: bold;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -494,20 +493,34 @@ p.aboutUs{
 
 li.products{
 	display: inline-block;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	margin-bottom: 10px;
-	width: 30%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 27%;
+	height: 440px;
 }
 
+
+
+
 div.productBox{
-	margin-top:  20px;
 	margin:auto;
 	position: relative;
+	top: 20px;
 	left: 0;
 	right: 0;
-	width: 200px;
-	height: 350px;
+	width: 240px;
+	height: 390px;
+	border:20px solid #D3D3D3;
+
+}
+
+div.productBox:active{
+		border:20px solid grey;
+}
+div.productBox:hover{
+		border:20px solid grey;
 }
 
 div.productBox img {
@@ -517,9 +530,10 @@ div.productBox img {
 	-ms-transition:all .2s ease-in-out;
 	-o-transition:all .2s ease-in-out;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 20px;
+	left: 20px;
 	margin:auto;
+
 }
 
 div.productBox:hover img 
@@ -528,14 +542,14 @@ div.productBox:hover img
 	-webkit-transform:scale(1.1);
 	-moz-transform:scale(1.1);
 	-ms-transform:scale(1.1);
-	-o-transform:scale(1.1)
+	-o-transform:scale(1.1);
 }
 .productBox p{
 	height: 30px;
 	width: 200px;
 	text-indent: 0px;
 	position: absolute;
-	top: 310px;
+	top: 330px;
 	text-align: center;
 }
 /**End of Categories**/
@@ -557,7 +571,7 @@ img.descript{
 	height:300px;
 }
 select{
-	font-size:1em;
+	font-size:16px;
 }
 
 
@@ -644,26 +658,8 @@ div.promo-product{
 }
 
 
-div.flex-description {
-	display: inline-flex;
-	flex-wrap:wrap;
-}
-div.snimka{
-	width: 50%;
-	display: inline;
-}
-div.kupi{
-	width: 50%;
-	display: inline;
-}
-div.information{
-	width: 100%;
-	display: inline;
-}
-div.dostavka{
-	width: 100%;
-	display: inline;
-}
+
+
 
 summary img{
   width: 600px; 
@@ -687,6 +683,8 @@ div.flex-down{
 	-webkit-flex-direction: column; /* Safari */
 	flex-direction:         column;
 	text-align: center;
+	margin-bottom: 10px;
+	margin:auto;
 }
 
 
@@ -697,8 +695,8 @@ div.flex-down{
 	height: 150px;
 	text-align: center;
 	font-size: 16px;
-	margin-right: 1em;
-	margin-bottom: 1em;
+	margin-right: 16px;
+	margin-bottom: 16px;
 	color: black;
 	box-sizing: border-box;
 	-webkit-border-image: url(../img/border-image1.png) 30 round; /* Safari 3.1-5 */
@@ -716,8 +714,8 @@ div.flex-down{
 	height: 150px;
 	border: 10px solid transparent;
 	padding: 20px;
-	margin-right: 1em;
-	margin-bottom: 1em;
+	margin-right: 16px;
+	margin-bottom: 16px;
 	box-sizing: border-box;
 	font-size: 16px;
 	text-align: center;
@@ -732,8 +730,8 @@ div.flex-down{
 	height: 150px;
 	border: 10px solid transparent;
 	padding: 45px;
-	margin-right: 1em;
-	margin-bottom: 1em;
+	margin-right: 16px;
+	margin-bottom: 16px;
 	box-sizing: border-box;
 	font-size: 16px;
 	text-align: center;
@@ -748,8 +746,8 @@ div.flex-down{
 	border: 10px solid transparent;
 	padding-top: 80px;
 	padding-left: 115px;
-	margin-right: 1em;
-	margin-bottom: 1em;
+	margin-right: 16px;
+	margin-bottom: 16px;
 	box-sizing: border-box;
 	font-size: 16px;
 	text-align: center;
@@ -763,12 +761,15 @@ section.reg{
 	width: 100%;
 }
 
-
-
-div.login, div.contact{
-	width: 50%;
-	margin: auto;	
+input.button{
+	width: 60px;
+	height: 30px;
+	background-color: #AEAEAE;
+	border: 1px solid grey;
+	color: white;
 }
+
+
 label.label {
 	width:200px;
 	display: inline-block;
@@ -786,7 +787,7 @@ p.noIndent{
 	text-indent: 0px;
 }
 fieldset{
-	font-size: 1em;
+	font-size: 16px;
 }
 fieldset.fieldset{
 	width: 50%;

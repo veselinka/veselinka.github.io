@@ -1,146 +1,106 @@
-
-
-
-
-
-
-
 /* TABLETS */
-@media all and (max-width: 1080px){
-	body {
-		 .container {
-    max-width: 100% ;
+@media all and (max-width: 1024px){
+  body {
+    background: white;
+    width: 100%;
   }
-
-    section {
+  div#wrapper{
+    border: none;
+    width: 95%;
+  }
+     div,span,a,p,ul,li,table,th,td,tr,footer{
+    font-size:1.16px;
+  }
+  section {
     width: 100%;
   }
   aside {
-  display: none;
-}
-
-
-
-
-
-  	}
-
-
-  	harmb {
-  		
-  	}
-}
-
-
-
-/* MOBILE */
-@media all and (max-width: 480px){
-
-div#wrapper{
-  border: none;
-  width: 95%;
-}
-	body {
-		background: white;
+    display: none;
+  }
+  nav.horizontal{
+    display: none;
+  }
+  nav.hamburger{
+    display: block;
+  }
+   body header{
+    display: block;
+    height: 50px;
     width: 100%;
-  	}
-
-
-header{
-  height: 50px;
-  width: 50%;
-  margin: auto;
-}
-img.imgLogo{
-margin: auto;
-float: none;
-width: 50%;
-text-align: center;
-
-
-}
-body header h1 {
-display: none;
-width: 0%;
-}
-
-header span{
-  display: none;
-  width: 0%;
-}
-aside{
-  display: none;  
-}
-section{
-  width: 100%;
-}
-
-h1 {
-  font-size: 1.5em;font-weight: bold;
-
-}
-h2 {
-  font-size: 1em;
-  font-weight: bold;
-
-}
-h3 {
-  font-size: 0.75em;
-  font-weight: bold;
-}
-p{
-  font-size: 0.75em;
-  margin: 0px 10px;
-}
-a{
-  font-size: 1em;
-}
-a.links{
-  font-size: 0.75em;
-  margin-left: 10px;
-}
-nav.horizontal{
-  display: none;
-}
-nav.hamburger{
-  display: block;
-}
-div,span,a,p,ul,footer{
-  font-size:16px;
-}
-
-/*Responsive Navigation*/
-
-
-div.responsiveNav{
-  display: block;
-  border:none;
-   border-top: 2px solid grey;
-}
-.responsiveNav ul{
-  display: inline;
-  border-top: 2px solid grey;
-
-}
-
-
-.responsiveNav ul li{
-  display: inline;
-    padding-top: 10px;
-  padding-left:2.5%;
-  padding-right: 2.5%;
-  align-content: center;
-  width: 19%;
-  float: left;
-}
-li.search{
-  display: none;
+    margin: auto;
   }
 
-/*end of Responsive navigation*/
 
-/*Hamburger*/
-.hamburger {
+  img.imgLogo{
+    display: block;
+  width: 30%;
+  border-bottom: 2px solid grey;
+  }
+  body header h1 {
+    display: none;
+    width: 50%;
+  }
+  header span{
+    display: none;
+    width: 0px;
+  }
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 16px;
+    margin: 0px 10px;
+  }
+  a{
+    font-size: 16px;
+  }
+  a.links{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+
+  /*Responsive Navigation*/
+
+
+  div.responsiveNav{
+    display: block;
+    border:none;
+    border-top: 2px solid grey;
+  }
+  .responsiveNav ul{
+    display: inline;
+    border-top: 2px solid grey;
+  }
+
+
+  .responsiveNav ul li{
+    display: inline;
+    padding-top: 10px;
+    padding-left:2.5%;
+    padding-right: 2.5%;
+    align-content: center;
+    width: 19%;
+    float: left;
+  }
+  li.search{
+    display: none;
+  }
+
+  /*end of Responsive navigation*/
+
+  /*Hamburger*/
+  .hamburger {
     max-height: 0;
     overflow: hidden;
     float: right;
@@ -151,18 +111,18 @@ li.search{
     transition: max-height 0.5s;
   }
 
-.hamburger ul.hor-nav {
-  float: none;
-  list-style-type: none;
-  background-color: #D3D3D3;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  .hamburger ul.hor-nav {
+    float: none;
+    list-style-type: none;
+    background-color: #D3D3D3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
-}
-div.clear{
-  clear: both;  
-}
+  }
+  div.clear{
+    clear: both;  
+  }
 
   .hamburger ul>li {
     display: block;
@@ -174,17 +134,22 @@ div.clear{
     padding: 0px;
 
   }
-   .hamburger ul>li:hover {
-      background: #AEAEAE;
-       color: #fff;
+  .hamburger ul>li:hover {
+    background: #AEAEAE;
+    color: #fff;
   }
 
   .hamburger ul li a {
     color: black;
-      text-decoration: none;
-      padding: 10px 0;
-     text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
     width: 90%;
+        padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;
+
   }
 
   .hamburger.menuOpen {
@@ -193,11 +158,11 @@ div.clear{
     -moz-transition: max-height 0.5s;
     transition: max-height 0.5s;
   }
-.searching{
-  display: none;
-}
+  .searching{
+    display: none;
+  }
 
-   .searching.menuOpen {
+  .searching.menuOpen {
     max-height: 1000px;
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
@@ -205,207 +170,455 @@ div.clear{
     display: block;
   }
 
-ul.hor-nav li ul {
-  padding: 0;
-  position: static;
-  top: 47px;
-  left: 0;
-  width: 100%;
-  margin-bottom: 1px;
-  box-shadow: none;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 5;
-
-}
-ul.hor-nav li ul li {
-  background: #AEAEAE;
-  display: block;
-  color: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 1px;
-}
-
-ul.hor-nav li ul li:hover {
-  background: #D3D3D3; 
-}
-
-
-/*Tova beshe zakomentirano*/
-
- ul.hor-nav li:hover ul {
-  display: none;
-  opacity: 1;
-  visibility: visible;
-} 
-
-
-
-ul.hor-nav li ul.open {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-ul.hor-nav li.search:hover {
-  background: none; 
-}
-
-span.plus{
-  display: inline;
-  right: 10px;
-  float: right;
-  position: absolute;
-  height: 100%;
-  top: 0px;
-  font-size: 20px;
-}
-
-
-/*End of Hamburger*/
-
-
-/**Start of Categories-damsko,mujko,detsko i podkategoriite**/
-li.search{
-  display: none;
-  }
-li.products{
-  width: 90%;
-}
-
-/**End of Categories**/
-
-img.descript{
-  display: inline;
-  float: left;
-  position: absolute;
-  width:150px;
-  height:250px;
-}
-
-
-select{
-  font-size:0.90em;
-}
-.buy select{
-  font.size: 0.75em;
-}
-
-
-div.buy{
-  display: inline;
-  position: relative;
-  margin-top: 40px;
-  width: 100%;
-  float: left;
-  margin-left: 10%;
-}
-
-
-summary img{
-  width: 300px; 
-  height: 125px;
-}
-
-
-
-/*Promo page*/
-
-
-li.promo{
-  width: 100%; 
-  left: 25%;
-  right: 25%
-}
-
-div.promo-product{
-  width: 100%;
-  margin: auto;
-  float: left;
-  position: relative; 
-  left: 25%;
-  right: 25%
-  top: 0px;
-  margin-right: 2%;
-}
-
-
-/*End of Promo page*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-/*
-
-@import url(style.css) all and (min-width: 1080px) {...}
-
-@media screen and (max-width: 1080px) and (min-width: 960px) {
-  body {
+  ul.hor-nav li ul {
+    padding: 0;
+    position: static;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1px;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
 
   }
-}
-
-section,
-aside {
-  margin: 0;
-}
-@media all and (max-width: 1080px) and (min-width: 960px) {
-  .container {
-    max-width: 100% ;
+  ul.hor-nav li ul li {
+    background: #AEAEAE;
+    display: block;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;
   }
-  section {
+
+  ul.hor-nav li ul li:hover {
+    background: #D3D3D3; 
+  }
+
+
+  /*Tova beshe zakomentirano*/
+
+  ul.hor-nav li:hover ul {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  } 
+
+
+
+  ul.hor-nav li ul.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  ul.hor-nav li.search:hover {
+    background: none; 
+  }
+
+  span.plus{
+    display: inline;
+    right: 10px;
     float: right;
-    width: 65%;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    font-size: 20px;
   }
-  aside {
+
+  /*End of Hamburger*/
+/**Start of Categories-damsko,mujko,detsko i podkategoriite**/
+  li.search{
+    display: none;
+  }
+  li.products{
+    width: 48%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin: auto;
+    
+  }
+
+  .productBox p{
+  height: 20px;
+  font-size: 16px;
+}
+
+  /**End of Categories**/
+
+  img.descript{
+    display: inline;
     float: left;
-    width: 35%;
+    position: absolute;
+    width:150px;
+    height:250px;
   }
-h1 {
-	font-size: 1.5em;font-weight: bold;
+
+
+  select{
+    font-size:16px;
+  }
+  .buy select{
+    font.size: 14px;
+  }
+
+
+  div.buy{
+    display: inline;
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+    margin-left: 10%;
+  }
+
+
+  summary img{
+    width: 300px; 
+    height: 125px;
+  }
+  fieldset.fieldset{
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+@media all and (max-width: 480px){
+
+  body {
+    background: white;
+    width: 100%;
+  }
+  div#wrapper{
+    border: none;
+    width: 95%;
+  }
+  section{
+    width: 100%;
+  }
+  aside{
+    display: none;  
+  }
+  
+
+  body header{
+    height: 50px;
+    width: 50%;
+    margin: auto;
+  }
+  img.imgLogo{
+    display: block;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  }
+  body header h1 {
+    display: none;
+  }
+  header span{
+    display: none;
+  }
+    div,span,a,p,ul,li,table,th,td,tr,footer{
+    font-size:16px;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 14px;
+    margin: 0px 10px;
+  }
+  a{
+    font-size: 16px;
+  }
+  a.links{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  nav.horizontal{
+    display: none;
+  }
+  nav.hamburger{
+    display: block;
+  }
+
+
+  /*Responsive Navigation*/
+
+
+  div.responsiveNav{
+    display: block;
+    border:none;
+    border-top: 2px solid grey;
+  }
+  .responsiveNav ul{
+    display: inline;
+    border-top: 2px solid grey;
+  }
+
+
+  .responsiveNav ul li{
+    display: inline;
+    padding-top: 10px;
+    padding-left:2.5%;
+    padding-right: 2.5%;
+    align-content: center;
+    width: 19%;
+    float: left;
+  }
+  li.search{
+    display: none;
+  }
+
+  /*end of Responsive navigation*/
+
+  /*Hamburger*/
+  .hamburger {
+    max-height: 0;
+    overflow: hidden;
+    float: right;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+
+  .hamburger ul.hor-nav {
+    float: none;
+    list-style-type: none;
+    background-color: #D3D3D3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  div.clear{
+    clear: both;  
+  }
+
+  .hamburger ul>li {
+    display: block;
+    width: 100%;
+    background: #D3D3D3;
+    color: #fff;
+    border-top: 1px solid #4d4d4d;
+    float: none;
+    padding: 0px;
+
+  }
+  .hamburger ul>li:hover {
+    background: #AEAEAE;
+    color: #fff;
+  }
+
+  .hamburger ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    width: 90%;
+        padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;
+
+  }
+
+  .hamburger.menuOpen {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+  .searching{
+    display: none;
+  }
+
+  .searching.menuOpen {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    display: block;
+  }
+
+  ul.hor-nav li ul {
+    padding: 0;
+    position: static;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1px;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+
+  }
+  ul.hor-nav li ul li {
+    background: #AEAEAE;
+    display: block;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;
+  }
+
+  ul.hor-nav li ul li:hover {
+    background: #D3D3D3; 
+  }
+
+
+  /*Tova beshe zakomentirano*/
+
+  ul.hor-nav li:hover ul {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  } 
+
+
+
+  ul.hor-nav li ul.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  ul.hor-nav li.search:hover {
+    background: none; 
+  }
+
+  span.plus{
+    display: inline;
+    right: 10px;
+    float: right;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    font-size: 20px;
+  }
+
+
+  /*End of Hamburger*/
+  /**Start of Categories-damsko,mujko,detsko i podkategoriite**/
+  li.search{
+    display: none;
+  }
+  li.products{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    
+  }
+
+  .productBox p{
+  height: 20px;
+  font-size: 16px;
+}
+
+  /**End of Categories**/
+
+  img.descript{
+    display: inline;
+    float: left;
+    position: absolute;
+    width:150px;
+    height:250px;
+  }
+
+
+  select{
+    font-size:15px;
+  }
+  .buy select{
+    font.size: 14px;
+  }
+
+
+  div.buy{
+    display: inline;
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+    margin-left: 10%;
+  }
+
+
+  summary img{
+    width: 300px; 
+    height: 125px;
+  }
+
+
+
+  /*Promo page*/
+
+
+  li.promo{
+    width: 100%; 
+    left: 25%;
+    right: 25%
+  }
+
+  div.promo-product{
+    width: 100%;
+    margin: auto;
+    float: left;
+    position: relative; 
+    left: 25%;
+    right: 25%
+    top: 0px;
+    margin-right: 2%;
+  }
+
+
+  /*End of Promo page*/
 
 }
-h2 {
-	font-size: 1em;
-	font-weight: bold;
-
-}
-h3 {
-	font-size: 0.87em;
-	font-weight: bold;
-
-}
-
-
-*/

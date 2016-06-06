@@ -160,10 +160,9 @@
 
 		</nav>
 		<section class="reg">
-			<div class="contact">
 				<header><h2>Свържете се с нас</h2></header>
 				<form method="post" action="#">
-
+				<fieldset class="fieldset">
 					<label for="name" class="label">Име:</label>
 					<input id="name" type="text" name="name"><br>
 
@@ -174,14 +173,13 @@
 					<input id="mail" type="email" name="email" required><br>
 
 					<label for="message" class="label">Съобщение:</label>
-					<textarea rows="8" cols="60" name="comments" required id="textarea"></textarea> <br>
+					<textarea rows="8" cols="40" name="comments" required id="textarea"></textarea> <br>
 
 					<label for="myfile" class="label">Прикачи файл:</label>
 					<input type="file" id="myFile"><br>
-
-					<p><input type="submit" name="commit" value="Изпрати" class="button"></p>
-				</form>
-			</div>
+					<p align="right"><input type="submit" name="commit" value="Изпрати" class="button"></p>
+			</fieldset>
+			</form>
 		</section>
 		<footer>
 			<hr/>
