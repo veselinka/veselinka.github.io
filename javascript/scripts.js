@@ -13,8 +13,15 @@ $( document ).ready(function() {
     });
 
     $('.hor-nav>li span').click(function(e) {
-        $(this).parent().siblings().children('ul').removeClass('open');
-    	$(this).parent().children('ul').toggleClass('open');
+
+        if ($(this).parent().hasClass('open')) {
+            $(this).parent().removeClass('open');    
+        } else {
+            $('.hor-nav>li').removeClass('open');
+            $(this).parent().toggleClass('open');
+        }
+
+        
 
 
     });

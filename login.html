@@ -52,7 +52,7 @@
 			<ul class="hor-nav">
 				<li class="navig">
 					<a href="damsko.html" class="subHamburger">Дамско</a>
-					<span class="plus">+</span>
+					<span class="plus"></span>
 					<ul>
 						<li>
 							<a href="rokli.html"> Рокли</a>
@@ -63,7 +63,7 @@
 					</ul>
 
 					<li class="navig"><a href="mujko.html" class="subHamburger"> Мъжко</a>
-					<span class="plus">+</span>
+					<span class="plus"></span>
 					<ul>
 						<li>
 							<a href="rizi.html"> Ризи</a>
@@ -74,7 +74,7 @@
 					</ul>
 					</li>
 					<li class="navig"><a href="detsko.html" class="subHamburger"> Детско</a>
-					<span class="plus">+</span>
+					<span class="plus"></span>
 					<ul>
 						<li>
 							<a href="komplekti.html">Комплекти</a>
@@ -147,26 +147,36 @@
 						</form>
 					</li>
 				</ul>
-
 			</nav>
-		<section class="reg">
 
-				<fieldset class="fieldset">
 
-				<header><h2>Влез в профила</h2></header>
-				<form method="post" action="http://veselinka.github.io/index.html">
-					<p><input type="text" name="login" placeholder="Потребителско име" size="20"></p>
-					<p><input type="password" name="password" placeholder="Парола" size="20"></p>
+		<section class="regLog">
+				<form method="post" action="#">
+				<fieldset id="login" class="animate form" >
+					<header><h2>Влез в профила</h2></header>
 					<p>
-						<label>
-							<input type="checkbox" name="remember_me" id="remember_me" checked>
-							Запомни ме на този компютър
-						</label>
+					<label for="username">Потребителско име:</label><br>
+					<input id="username" type="text" name="login" placeholder="Потребителско име">
 					</p>
-					<p><input type="submit" name="commit" value="Вход" class="button"></p>
-				</form>
-				<p>Забравена парола? <a href="#">Кликни тук за смяна.</a></p>
+					<p>
+					<label for="pass">Парола:</label><br>
+					<input id="pass" type="password" name="password" placeholder="Парола">
+					</p>
+						<p class="keeplogin">
+							<input id="chekbox" type="checkbox" name="remember_me" id="remember_me" checked>
+							<label for="checkbox">Запомни ме на този компютър</label>
+					</p>
+					<p class="login button"> 
+                                    <input type="submit" value="Вход" /> 
+								</p>
+						<p class="change_link">
+									Все още нямаш регистрация?
+									<a href="register.html">Регистрирай се</a>
+								</p>
+
 			</fieldset>
+				</form>
+	
 		</section>
 		<footer>
 			<hr>

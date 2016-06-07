@@ -8,8 +8,8 @@
     border: none;
     width: 95%;
   }
-     div,span,a,p,ul,li,table,th,td,tr,footer{
-    font-size:1.16px;
+  div,span,a,p,ul,li,table,th,td,tr,footer{
+    font-size:20px;
   }
   section {
     width: 100%;
@@ -17,6 +17,7 @@
   aside {
     display: none;
   }
+
   nav.horizontal{
     display: none;
   }
@@ -29,49 +30,39 @@
     width: 100%;
     margin: auto;
   }
-
-
   img.imgLogo{
-    display: block;
-  width: 30%;
-  border-bottom: 2px solid grey;
+  display: block;
+  width: 150px;
+  height: 50px;
   }
   body header h1 {
     display: none;
-    width: 50%;
   }
   header span{
     display: none;
-    width: 0px;
   }
 
-h1 {
+h1,h2,h3{
+    font-weight: bold;
+  }
+  h1{
+   font-size: 24px;
+  }
+  h2,h3,a{
     font-size: 20px;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
   }
   p{
-    font-size: 16px;
+    font-size: 20px;
     margin: 0px 10px;
   }
-  a{
-    font-size: 16px;
-  }
   a.links{
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 10px;
   }
-
-
+  .fieldset header{
+   width: 100%;
+  }
   /*Responsive Navigation*/
-
 
   div.responsiveNav{
     display: block;
@@ -82,6 +73,7 @@ h1 {
     display: inline;
     border-top: 2px solid grey;
   }
+
 
 
   .responsiveNav ul li{
@@ -96,8 +88,10 @@ h1 {
   li.search{
     display: none;
   }
-
   /*end of Responsive navigation*/
+
+
+
 
   /*Hamburger*/
   .hamburger {
@@ -118,12 +112,10 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 0;
-
   }
   div.clear{
     clear: both;  
   }
-
   .hamburger ul>li {
     display: block;
     width: 100%;
@@ -132,13 +124,12 @@ h1 {
     border-top: 1px solid #4d4d4d;
     float: none;
     padding: 0px;
-
   }
+
   .hamburger ul>li:hover {
     background: #AEAEAE;
     color: #fff;
   }
-
   .hamburger ul li a {
     color: black;
     text-decoration: none;
@@ -149,7 +140,6 @@ h1 {
     padding-bottom: 5px;
     margin-bottom: 1px;
     font-size: 16px;
-
   }
 
   .hamburger.menuOpen {
@@ -161,7 +151,6 @@ h1 {
   .searching{
     display: none;
   }
-
   .searching.menuOpen {
     max-height: 1000px;
     -webkit-transition: max-height 0.5s;
@@ -169,7 +158,6 @@ h1 {
     transition: max-height 0.5s;
     display: block;
   }
-
   ul.hor-nav li ul {
     padding: 0;
     position: static;
@@ -181,7 +169,6 @@ h1 {
     opacity: 0;
     visibility: hidden;
     z-index: 5;
-
   }
   ul.hor-nav li ul li {
     background: #AEAEAE;
@@ -197,18 +184,12 @@ h1 {
     background: #D3D3D3; 
   }
 
-
-  /*Tova beshe zakomentirano*/
-
   ul.hor-nav li:hover ul {
     display: none;
     opacity: 1;
     visibility: visible;
   } 
-
-
-
-  ul.hor-nav li ul.open {
+  ul.hor-nav li.open ul {
     display: block;
     opacity: 1;
     visibility: visible;
@@ -223,16 +204,23 @@ h1 {
     right: 10px;
     float: right;
     position: absolute;
-    height: 100%;
+    height: 40px;
     top: 5px;
     font-size: 20px;
   }
 
+  span.plus:before {
+    content: '+';
+    display: block;
+  }
+
+  li.open span.plus:before {
+    content: '-';
+  }
+
   /*End of Hamburger*/
 /**Start of Categories-damsko,mujko,detsko i podkategoriite**/
-  li.search{
-    display: none;
-  }
+
   li.products{
     width: 48%;
     margin-bottom: 40px;
@@ -283,12 +271,10 @@ h1 {
   width: 50%;
 }
 
-
-
-
-
-
-
+/*Reg forms*/
+  .regLog p.button input{
+  width: 40%;
+}
 
 
 
@@ -320,236 +306,35 @@ h1 {
 /* MOBILE */
 @media all and (max-width: 480px){
 
-  body {
-    background: white;
-    width: 100%;
-  }
-  div#wrapper{
-    border: none;
-    width: 95%;
-  }
-  section{
-    width: 100%;
-  }
-  aside{
-    display: none;  
-  }
-  
 
   body header{
     height: 50px;
     width: 50%;
     margin: auto;
   }
-  img.imgLogo{
-    display: block;
-  width: 100%;
-  border-bottom: 2px solid grey;
-  }
-  body header h1 {
-    display: none;
-  }
-  header span{
-    display: none;
-  }
+ 
     div,span,a,p,ul,li,table,th,td,tr,footer{
     font-size:16px;
   }
   h1 {
     font-size: 20px;
-    font-weight: bold;
+    
   }
-  h2 {
+  h2,h3,a{
     font-size: 16px;
-    font-weight: bold;
-  }
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
   }
   p{
-    font-size: 14px;
+    font-size: 16px;
     margin: 0px 10px;
   }
-  a{
-    font-size: 16px;
-  }
   a.links{
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 10px;
   }
-  nav.horizontal{
-    display: none;
-  }
-  nav.hamburger{
-    display: block;
-  }
 
 
-  /*Responsive Navigation*/
-
-
-  div.responsiveNav{
-    display: block;
-    border:none;
-    border-top: 2px solid grey;
-  }
-  .responsiveNav ul{
-    display: inline;
-    border-top: 2px solid grey;
-  }
-
-
-  .responsiveNav ul li{
-    display: inline;
-    padding-top: 10px;
-    padding-left:2.5%;
-    padding-right: 2.5%;
-    align-content: center;
-    width: 19%;
-    float: left;
-  }
-  li.search{
-    display: none;
-  }
-
-  /*end of Responsive navigation*/
-
-  /*Hamburger*/
-  .hamburger {
-    max-height: 0;
-    overflow: hidden;
-    float: right;
-    text-align: center;
-    width: 100%;
-    -webkit-transition: max-height 0.5s;
-    -moz-transition: max-height 0.5s;
-    transition: max-height 0.5s;
-  }
-
-  .hamburger ul.hor-nav {
-    float: none;
-    list-style-type: none;
-    background-color: #D3D3D3;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-  }
-  div.clear{
-    clear: both;  
-  }
-
-  .hamburger ul>li {
-    display: block;
-    width: 100%;
-    background: #D3D3D3;
-    color: #fff;
-    border-top: 1px solid #4d4d4d;
-    float: none;
-    padding: 0px;
-
-  }
-  .hamburger ul>li:hover {
-    background: #AEAEAE;
-    color: #fff;
-  }
-
-  .hamburger ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 0;
-    text-align: center;
-    width: 90%;
-        padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 1px;
-    font-size: 16px;
-
-  }
-
-  .hamburger.menuOpen {
-    max-height: 1000px;
-    -webkit-transition: max-height 0.5s;
-    -moz-transition: max-height 0.5s;
-    transition: max-height 0.5s;
-  }
-  .searching{
-    display: none;
-  }
-
-  .searching.menuOpen {
-    max-height: 1000px;
-    -webkit-transition: max-height 0.5s;
-    -moz-transition: max-height 0.5s;
-    transition: max-height 0.5s;
-    display: block;
-  }
-
-  ul.hor-nav li ul {
-    padding: 0;
-    position: static;
-    left: 0;
-    width: 100%;
-    margin-bottom: 1px;
-    box-shadow: none;
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 5;
-
-  }
-  ul.hor-nav li ul li {
-    background: #AEAEAE;
-    display: block;
-    color: #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 1px;
-    font-size: 16px;
-  }
-
-  ul.hor-nav li ul li:hover {
-    background: #D3D3D3; 
-  }
-
-
-  /*Tova beshe zakomentirano*/
-
-  ul.hor-nav li:hover ul {
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  } 
-
-
-
-  ul.hor-nav li ul.open {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  ul.hor-nav li.search:hover {
-    background: none; 
-  }
-
-  span.plus{
-    display: inline;
-    right: 10px;
-    float: right;
-    position: absolute;
-    height: 100%;
-    top: 0px;
-    font-size: 20px;
-  }
-
-
-  /*End of Hamburger*/
   /**Start of Categories-damsko,mujko,detsko i podkategoriite**/
-  li.search{
-    display: none;
-  }
+
   li.products{
     width: 100%;
     margin: auto;
@@ -621,4 +406,19 @@ h1 {
 
   /*End of Promo page*/
 
+
+/*REgister form*/
+
+.regLog{
+  width: 100%;
+  right: 0;
+}
+form{
+  width: 100%;
+}
+.keeplogin label{
+  width: 86%;
+}
+  .regLog p.button input{
+  width: 47%;
 }
