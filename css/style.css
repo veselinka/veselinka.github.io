@@ -347,13 +347,13 @@ aside{
 /**Effects-Start of Carousel**/
 .css-carousel {
 	width: 100%;
-	height: 400px; /* Height of images */
+	height: 366px; /* Height of images */
 	position: relative;
 	overflow: hidden;
 }
 .css-carousel .css-img {
 	width: 100%;
-	height: 366px;
+	height: 100%;
 	position: absolute;
 	left: 0;
 	right: 0;
