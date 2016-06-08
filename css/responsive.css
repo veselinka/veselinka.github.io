@@ -233,16 +233,9 @@ h1,h2,h3{
   height: 20px;
   font-size: 16px;
 }
-
   /**End of Categories**/
+/***Start of description pages***/
 
-  img.descript{
-    display: inline;
-    float: left;
-    position: absolute;
-    width:150px;
-    height:250px;
-  }
 
 
   select{
@@ -270,6 +263,10 @@ h1,h2,h3{
   fieldset.fieldset{
   width: 50%;
 }
+
+
+
+
 
 /*Reg forms*/
   .regLog p.button input{
@@ -349,6 +346,17 @@ h1,h2,h3{
 
   /**End of Categories**/
 
+
+/*Description page*/
+
+
+
+
+
+
+
+  /*Promo page*/
+
   img.descript{
     display: inline;
     float: left;
@@ -356,7 +364,7 @@ h1,h2,h3{
     width:150px;
     height:250px;
   }
-
+.img-opacity img { width: 150px; height: 250px;}
 
   select{
     font-size:15px;
@@ -382,26 +390,15 @@ h1,h2,h3{
   }
 
 
-
-  /*Promo page*/
-
-
   li.promo{
-    width: 100%; 
-    left: 25%;
-    right: 25%
-  }
-
-  div.promo-product{
     width: 100%;
     margin: auto;
-    float: left;
-    position: relative; 
-    left: 25%;
-    right: 25%
-    top: 0px;
-    margin-right: 2%;
+    margin-bottom: 30px;
   }
+  .productBox span{
+  height: 20px;
+  font-size: 16px;
+}
 
 
   /*End of Promo page*/
