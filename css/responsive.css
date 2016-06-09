@@ -8,8 +8,7 @@
     border: none;
     width: 95%;
   }
-  div,span,a,p,ul,li,table,th,td,tr,footer{
-    font-size:20px;
+  div,span,a,p,ul,li,table,th,td,tr,footer{-size:20px;
   }
   section {
     width: 100%;
@@ -26,19 +25,22 @@
   }
    body header{
     display: block;
+    font
     height: 50px;
     width: 100%;
     margin: auto;
   }
-  img.imgLogo{
+  header img.imgLogo{
   display: block;
   width: 150px;
   height: 50px;
   }
-  body header h1 {
+
+
+  body header #vip {
     display: none;
   }
-  header span{
+  body header span{
     display: none;
   }
 
@@ -48,7 +50,10 @@ h1,h2,h3{
   h1{
    font-size: 24px;
   }
-  h2,h3,a{
+  h2{
+    font-size: 22px;
+  }
+  h3,a{
     font-size: 20px;
   }
   p{
@@ -309,6 +314,9 @@ h1,h2,h3{
     width: 50%;
     margin: auto;
   }
+  section header{
+  	width: 100%;
+  }
  
     div,span,a,p,ul,li,table,th,td,tr,footer{
     font-size:16px;
@@ -317,7 +325,8 @@ h1,h2,h3{
     font-size: 20px;
     
   }
-  h2,h3,a{
+
+  a{
     font-size: 16px;
   }
   p{
