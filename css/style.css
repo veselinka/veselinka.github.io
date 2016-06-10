@@ -1,8 +1,6 @@
 /*Start of Reset*/
 html, body, div, span, applet, object, iframe,
-h1,
-h2,
-h3, h2, h3, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -38,23 +36,7 @@ body {
     content: none; }
   body table {
     border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    background-color: #D3D3D3;
-    border: 1px solid white;
-    margin: auto; }
-  body th {
-    font-weight: bold; }
-  body th:nth-child(1) {
-    background: #AEAEAE;
-    color: #fff; }
-  body tr td:first-child {
-    width: 40%; }
-  body tr td:last-child {
-    width: 60%; }
-  body td {
-    border: 1px solid white;
-    padding-left: 5px; }
+    border-spacing: 0; }
 
 /*End of Reset*/
 .facebook {
@@ -85,17 +67,23 @@ div#wrapper {
   overflow: hidden;
   margin: auto; }
 
-h1, h2, h3 {
+h1 {
   font-size: 32px;
   font-weight: bold;
   padding-top: 0.5em;
   padding-bottom: 0.5em; }
 
-h2, h3 {
+h2 {
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   width: 100%;
   font-size: 24px; }
 
 h3 {
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   font-size: 20px; }
 
 h4 {
@@ -144,7 +132,9 @@ body header {
   body header #vip {
     width: 65%;
     padding: 0px;
-    display: inline-block; }
+    display: inline-block;
+    color: #3CA4CB;
+    text-shadow: 1px 1px #3CA4CB; }
   body header span {
     float: right;
     width: 20%;
@@ -161,7 +151,7 @@ nav {
 ul.hor-nav {
   float: left;
   list-style-type: none;
-  background-color: #D3D3D3;
+  background-color: #AEAEAE;
   width: 100%;
   display: inline;
   margin: 0;
@@ -174,7 +164,7 @@ ul.hor-nav > li {
   display: inline-block;
   position: relative;
   padding: 10px 5px;
-  background: #D3D3D3;
+  background: #AEAEAE;
   color: #fff;
   float: left; }
 
@@ -190,7 +180,7 @@ nav ul.hor-nav li.search {
   display: inline; }
 
 ul.hor-nav > li:hover {
-  background: #AEAEAE;
+  background: #D3D3D3;
   color: #fff; }
 
 ul.hor-nav li ul {
@@ -207,14 +197,14 @@ ul.hor-nav li ul {
   z-index: 5; }
 
 ul.hor-nav li ul li {
-  background: #AEAEAE;
+  background: #D3D3D3;
   display: block;
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px; }
 
 ul.hor-nav li ul li:hover {
-  background: #D3D3D3; }
+  background: #AEAEAE; }
 
 ul.hor-nav li:hover ul {
   display: block;
@@ -234,7 +224,7 @@ aside {
   position: relative;
   z-index: 2; }
   aside .parent-menu {
-    background-color: #D3D3D3;
+    background-color: #AEAEAE;
     width: 80%;
     float: left;
     list-style-type: none; }
@@ -246,7 +236,7 @@ aside {
         color: #fff;
         text-decoration: none; }
         aside .parent-menu li a:hover {
-          background-color: #AEAEAE; }
+          background-color: #D3D3D3; }
 
 /*Effects*/
 /**Effects-Start of Carousel**/
@@ -337,6 +327,24 @@ aside {
   animation-duration: 1s; }
 
 /*End of rubberBand*/
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
 /*Effect Pulse - na promocii*/
 @keyframes pulse {
   0% {
@@ -410,7 +418,14 @@ section {
 article p {
   text-align: justify; }
 
-section h2, section h3, section h3 {
+section h2 {
+  text-align: center; }
+
+section .backColor {
+  background-color: #3CA4CB;
+  color: white; }
+
+section h3 {
   text-align: center; }
 
 p.aboutUs {
@@ -471,7 +486,7 @@ div.productBox:hover img {
 /**End of Categories**/
 /***Start of description pages***/
 .firstArticle {
-  height: 350px; }
+  height: 360px; }
 
 div.image {
   width: 50%; }
@@ -645,6 +660,31 @@ div.flex-down {
   font-size: 16px;
   text-align: center; }
 
+body table {
+  width: 100%;
+  border: 1px solid white;
+  margin: auto; }
+
+body th {
+  font-weight: bold;
+  background: #3CA4CB;
+  color: #fff; }
+
+body tr td:first-child {
+  width: 40%; }
+
+body tr td:last-child {
+  width: 60%; }
+
+body td {
+  padding-left: 5px; }
+
+body tr.even {
+  background-color: #B1DAEA; }
+
+body tr.odd {
+  background-color: white; }
+
 /*****End of Voucher page*****/
 /*Start of contacts, about us, reg and logIn*/
 section.reg {
@@ -671,27 +711,30 @@ div.multiColumn {
 p.noIndent {
   text-indent: 0px; }
 
+/*Footer*/
 footer {
-  display: block;
   bottom: 0px;
   float: left;
   width: 100%;
   text-align: center; }
 
-footer .footerNav {
-  display: inline; }
+footer #footerNav {
+  display: inline-block;
+  width: 100%; }
 
-footer .footerNav li {
+footer #footerNav li {
   border-right: 0.5px solid;
   display: inline;
   margin-left: 5px;
   margin-right: 5px; }
 
-footer .footerNav li:last-child {
+footer #footerNav li:last-child {
   border-right: none; }
 
-footer .footerNav + p {
-  color: grey; }
+footer #footerNav + p {
+  width: 100%;
+  color: grey;
+  text-indent: 0px; }
 
 ul#footerNav a:link, ul#footerNav a:visited {
   color: black; }
@@ -705,27 +748,41 @@ ul#footerNav a:hover, p#clickHere a:hover {
 ul#footerNav a:active, p#clickHere a:active {
   color: blue; }
 
-.social-links li {
-  list-style: none; }
-  .social-links li a {
+footer #social-links {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+footer #social-links li {
+  list-style: none;
+  display: inline-block; }
+  footer #social-links li a {
     display: inline-block;
-    float: left;
     width: 25px;
-    height: 25px; }
+    height: 25px;
+    padding-right: 10px; }
 
 /*End Footer*/
 /*Hack for heading color in mozzila */
 @-moz-document url-prefix() {
-  h1, h2, h3 {
+  h1 {
     color: blue; } }
 /*End of Hack  */
 harmb {
   display: none; }
 
 /*REgister form*/
+#registraciq {
+  min-height: 1110px; }
+
+#vhod {
+  min-height: 410px; }
+
+#kontakti {
+  min-height: 720px; }
+
 .regLog {
   width: 50%;
-  min-height: 1100px;
   margin: 0px auto;
   position: relative;
   right: 25%; }
@@ -826,8 +883,8 @@ div.buy button, .regLog p.button input {
   -o-transition: all 0.2s linear; }
 
 div.buy button {
-  background-color: #D3D3D3;
-  border: 1px solid grey; }
+  background-color: #B1DAEA;
+  border: 1px solid #3CA4CB; }
 
 .regLog p.button input {
   background: #3d9db3;
@@ -884,5 +941,346 @@ p.change_link {
   display: inline-block;
   color: #1da2c1;
   font-size: 16px; }
+
+/* TABLETS */
+@media all and (max-width: 1024px) {
+  body {
+    background: white;
+    width: 100%; }
+
+  div#wrapper {
+    border: none;
+    width: 95%; }
+
+  div, span, a, p, ul, li, table, th, td, tr, footer {
+    size: 20px; }
+
+  section {
+    width: 100%; }
+
+  aside {
+    display: none; }
+
+  nav.horizontal {
+    display: none; }
+
+  nav.hamburger {
+    display: block; }
+
+  body header {
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: auto; }
+
+  header img.imgLogo {
+    display: block;
+    width: 150px;
+    height: 50px; }
+
+  body header #vip {
+    display: none; }
+
+  body header span {
+    display: none; }
+
+  h1, h2, h3 {
+    font-weight: bold; }
+
+  h1 {
+    font-size: 24px; }
+
+  h2 {
+    font-size: 22px; }
+
+  h3, a {
+    font-size: 20px; }
+
+  p {
+    font-size: 20px;
+    margin: 0px 10px; }
+
+  a.links {
+    font-size: 20px;
+    margin-left: 10px; }
+
+  .fieldset header {
+    width: 100%; }
+
+  /*Responsive Navigation*/
+  div.responsiveNav {
+    display: block;
+    border: none;
+    border-top: 2px solid grey; }
+    div.responsiveNav ul {
+      display: inline;
+      border-top: 2px solid grey; }
+      div.responsiveNav ul li {
+        display: inline;
+        padding-top: 10px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        align-content: center;
+        width: 19%;
+        float: left; }
+        div.responsiveNav ul li li.search {
+          display: none; }
+
+  /*end of Responsive navigation*/
+  /*Hamburger*/
+  .hamburger {
+    max-height: 0;
+    overflow: hidden;
+    float: right;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+
+  .hamburger ul.hor-nav {
+    float: none;
+    list-style-type: none;
+    background-color: #D3D3D3;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+  .hamburger ul > li {
+    display: block;
+    width: 100%;
+    background: #D3D3D3;
+    color: #fff;
+    border-top: 1px solid #4d4d4d;
+    float: none;
+    padding: 0px; }
+
+  .hamburger ul > li:hover {
+    background: #AEAEAE;
+    color: #fff; }
+
+  .hamburger ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 16px; }
+
+  .hamburger.menuOpen {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+
+  div.clear {
+    clear: both; }
+
+  .searching {
+    display: none; }
+
+  .searching.menuOpen {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    display: block; }
+
+  ul.hor-nav li ul {
+    padding: 0;
+    position: static;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1px;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5; }
+
+  ul.hor-nav li ul li {
+    background: #AEAEAE;
+    display: block;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 16px; }
+
+  ul.hor-nav li ul li:hover {
+    background: #D3D3D3; }
+
+  ul.hor-nav li:hover ul {
+    display: none;
+    opacity: 1;
+    visibility: visible; }
+
+  ul.hor-nav li.open ul {
+    display: block;
+    opacity: 1;
+    visibility: visible; }
+
+  ul.hor-nav li.search:hover {
+    background: none; }
+
+  span.plus {
+    display: inline;
+    right: 10px;
+    float: right;
+    position: absolute;
+    height: 40px;
+    top: 5px;
+    font-size: 20px; }
+
+  span.plus:before {
+    content: '+';
+    display: block; }
+
+  li.open span.plus:before {
+    content: '-'; }
+
+  /*End of Hamburger*/
+  /**Start of Categories-damsko,mujko,detsko i podkategoriite**/
+  li.products {
+    width: 48%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin: auto; }
+
+  .productBox p {
+    height: 20px;
+    font-size: 16px; }
+
+  /**End of Categories**/
+  /***Start of description pages***/
+  select {
+    font-size: 16px; }
+
+  .buy select {
+    font-size: 14px; }
+
+  div.buy {
+    display: inline;
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+    margin-left: 10%; }
+
+  summary img {
+    width: 300px;
+    height: 125px; }
+
+  fieldset.fieldset {
+    width: 50%; }
+
+  /*Reg forms*/
+  .regLog p.button input {
+    width: 40%; } }
+/* MOBILE */
+@media all and (max-width: 480px) {
+  body header {
+    height: 50px;
+    width: 50%;
+    margin: auto; }
+
+  section header {
+    width: 100%; }
+
+  div, span, a, p, ul, li, table, th, td, tr, footer {
+    font-size: 16px; }
+
+  h1 {
+    font-size: 20px; }
+
+  a {
+    font-size: 16px; }
+
+  p {
+    font-size: 16px;
+    margin: 0px 10px; }
+
+  a.links {
+    font-size: 16px;
+    margin-left: 10px; }
+
+  /*carousel*/
+  .css-carousel {
+    width: 100%;
+    height: 183px; }
+    .css-carousel .css-img {
+      width: 100%;
+      height: 100%; }
+
+  /**Start of Categories-damsko,mujko,detsko i podkategoriite**/
+  li.products {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px; }
+
+  .productBox p {
+    height: 20px;
+    font-size: 16px; }
+
+  .firstArticle {
+    height: 300px; }
+
+  /**End of Categories**/
+  /*Promo page*/
+  img.descript {
+    display: inline;
+    float: left;
+    position: absolute;
+    width: 150px;
+    height: 230px; }
+
+  .img-opacity img {
+    width: 150px;
+    height: 230px; }
+
+  select {
+    font-size: 15px; }
+
+  .buy select {
+    font-size: 14px; }
+
+  div.buy {
+    display: inline;
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+    margin-left: 10%; }
+
+  summary img {
+    width: 300px;
+    height: 125px; }
+
+  li.promo {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px; }
+
+  .productBox span {
+    height: 20px;
+    font-size: 16px; }
+
+  /*End of Promo page*/
+  /*REgister form*/
+  .regLog {
+    width: 100%;
+    right: 0; }
+
+  form {
+    width: 100%; }
+
+  .keeplogin label {
+    width: 86%; }
+
+  .regLog p.button input {
+    width: 47%; } }
 
 /*# sourceMappingURL=style.css.map */

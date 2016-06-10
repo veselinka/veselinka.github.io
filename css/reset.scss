@@ -41,26 +41,6 @@ q:before, q:after {
 table {
 		border-collapse: collapse;
 		border-spacing: 0;
-		width: 100%;
-		background-color: #D3D3D3;
-		border: 1px solid white;
-		margin: auto; 
-			}
-			th {
-		font-weight: bold; }
-
-th:nth-child(1) {
-		background: #AEAEAE;
-		color: #fff; }
-
-tr td:first-child {
-		width: 40%; }
-
-tr td:last-child {
-		width: 60%; }
-
-td {
-		border: 1px solid white;
-		padding-left: 5px; }
+}
 }
 /*End of Reset*/

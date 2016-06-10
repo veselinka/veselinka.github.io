@@ -1,9 +1,10 @@
 @import 'reset';
-
 $font-stack:'Tenor Sans', sans-serif;
 $display-inline:inline-block;
 $grey-color: #D3D3D3;
 $grey: #AEAEAE;
+$blue-color:#3CA4CB;
+$ocean-blue:#B1DAEA;
 
 @mixin animation-delay($delay:5s){
 		-webkit-animation-delay:$delay;
@@ -52,14 +53,19 @@ h1 {
 		font-size: 32px;
 		font-weight: bold;
 		padding-top: 0.5em;
-		padding-bottom: 0.5em; }
+		padding-bottom: 0.5em;
+		 }
 h2 {
-		@extend h1;
+		font-weight: bold;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
 		width: 100%;
 		font-size: 24px;
 		}
 h3 {
-		@extend h2;
+		font-weight: bold;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
 		font-size: 20px; 
 }
 h4 {
@@ -115,6 +121,8 @@ body{
 			width: 65%;
 			padding: 0px;
 			display:  $display-inline;
+			color: $blue-color;
+			text-shadow: 1px 1px $blue-color;
 		}
 		span {
 			float: right;
@@ -123,6 +131,7 @@ body{
 		}
 	}
 }
+
 /*End of header*/
 /*Start of Navigation*/
 nav{
@@ -134,7 +143,7 @@ nav{
 ul.hor-nav {
 		float: left;
 		list-style-type: none;
-		background-color: $grey-color;
+		background-color: $grey;
 		width: 100%;
 		display: inline;
 		margin: 0;
@@ -147,7 +156,7 @@ ul.hor-nav > li {
 		display: inline-block;
 		position: relative;
 		padding: 10px 5px;
-		background: $grey-color;
+		background: $grey;
 		color: #fff;
 		float: left; }
 
@@ -163,7 +172,7 @@ nav ul.hor-nav li.search {
 		display: inline; }
 
 ul.hor-nav > li:hover {
-		background: $grey;
+		background: $grey-color;
 		color: #fff; }
 
 
@@ -182,14 +191,14 @@ ul.hor-nav li ul {
 		z-index: 5; }
 
 ul.hor-nav li ul li {
-		background: $grey;
+		background: $grey-color;
 		display: block;
 		color: #fff;
 		padding-top: 10px;
 		padding-bottom: 10px; }
 
 ul.hor-nav li ul li:hover {
-		background: $grey-color; }
+		background: $grey; }
 
 ul.hor-nav li:hover ul {
 		display: block;
@@ -211,7 +220,7 @@ aside {
 		z-index: 2;
 
 		.parent-menu {
-			background-color: $grey-color;
+			background-color: $grey;
 			width: 80%;
 			float: left; 
 			list-style-type: none; 
@@ -223,7 +232,7 @@ aside {
 					color: #fff;
 					text-decoration: none; 
 					&:hover {
-						background-color: $grey;
+						background-color: $grey-color;
 					}
 				}
 			}
@@ -310,6 +319,36 @@ aside {
 	}
 
 /*End of rubberBand*/
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+
 /*Effect Pulse - na promocii*/
 @keyframes pulse {
 		0% {
@@ -375,7 +414,16 @@ section {
 article p {
 		text-align: justify; }
 
-section h2, section h3 {
+section h2{
+	text-align: center;
+}
+
+section .backColor{
+	background-color: $blue-color;
+	color: white;
+}
+
+section h3 {
 		text-align: center; }
 
 p.aboutUs {
@@ -427,12 +475,13 @@ div.productBox:hover img {
 		text-indent: 0px;
 		position: absolute;
 		top: 330px;
-		text-align: center; }
+		text-align: center;
+		 }
 
 /**End of Categories**/
 /***Start of description pages***/
 .firstArticle {
-		height: 350px; }
+		height: 360px; }
 
 div.image {
 		width: 50%; }
@@ -617,6 +666,32 @@ div.flex-down {
 		font-size: 16px;
 		text-align: center; }
 
+
+
+  body table {
+    width: 100%;
+    border: 1px solid white;
+    margin: auto; }
+  body th {
+    font-weight: bold; 
+    background: $blue-color;
+    color: #fff; }
+  body tr td:first-child {
+    width: 40%; }
+  body tr td:last-child {
+    width: 60%; }
+  body td {
+    padding-left: 5px; }
+    body tr.even{
+    background-color: $ocean-blue;
+    }
+    body tr.odd{
+    	    background-color: white;
+    }
+
+
+
+
 /*****End of Voucher page*****/
 /*Start of contacts, about us, reg and logIn*/
 section.reg {
@@ -641,27 +716,33 @@ div.multiColumn {
 p.noIndent {
 		text-indent: 0px; }
 
+/*Footer*/
 footer {
-		display: block;
+
 		bottom: 0px;
 		float: left;
 		width: 100%;
-		text-align: center; }
+		text-align: center; 
+	}
 
-footer .footerNav {
-		display: inline; }
+footer #footerNav {
+		display: inline-block; 
+		width: 100%}
 
-footer .footerNav li {
+footer #footerNav li {
 		border-right: 0.5px solid;
 		display: inline;
 		margin-left: 5px;
 		margin-right: 5px; }
 
-footer .footerNav li:last-child {
+footer #footerNav li:last-child {
 		border-right: none; }
 
-footer .footerNav + p {
-		color: grey; }
+footer #footerNav + p {
+	width: 100%;
+		color: grey;
+		text-indent: 0px; 
+	}
 
 ul#footerNav a:link, ul#footerNav a:visited {
 		color: black; }
@@ -675,13 +756,24 @@ ul#footerNav a:hover, p#clickHere a:hover {
 ul#footerNav a:active, p#clickHere a:active {
 		color: blue; }
 
-.social-links li{
+footer #social-links{
+display: block;
+width:100%;
+text-align: center;
+
+
+}
+
+footer #social-links li{
 	list-style: none;
+	display: inline-block;
 	a{
-		display: inline-block;
-		float: left;
+
+display: inline-block;
 		width: 25px;
 		height: 25px;
+
+		padding-right: 10px;
 	}
 }
 
@@ -695,9 +787,17 @@ harmb {
 		display: none; }
 
 /*REgister form*/
+#registraciq{
+			min-height: 1110px;
+}
+#vhod{
+		min-height: 410px;
+}
+#kontakti{
+		min-height: 720px;
+}
 .regLog {
 		width: 50%;
-		min-height: 1100px;
 		margin: 0px auto;
 		position: relative;
 		right: 25%; 
@@ -811,8 +911,8 @@ harmb {
 						}
 
 						div.buy button {
-								background-color: $grey-color;
-								border: 1px solid grey; }
+								background-color:$ocean-blue;
+								border: 1px solid $blue-color; }
 
 .regLog p.button input {
 		background: #3d9db3;
@@ -868,3 +968,7 @@ p.change_link {
 		color: #1da2c1;
 		font-size: 16px; }
 
+
+
+
+@import 'responsive';

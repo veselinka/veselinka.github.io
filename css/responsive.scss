@@ -1,0 +1,409 @@
+$grey-color: #D3D3D3;
+$grey: #AEAEAE;
+$font-size:20px;
+
+/* TABLETS */
+@media all and (max-width: 1024px){
+  body {
+    background: white;
+    width: 100%;
+  }
+  div#wrapper{
+    border: none;
+    width: 95%;
+  }
+  div,span,a,p,ul,li,table,th,td,tr,footer{
+    size:$font-size;
+  }
+  section {
+    width: 100%;
+  }
+  aside {
+    display: none;
+  }
+
+  nav.horizontal{
+    display: none;
+  }
+  nav.hamburger{
+    display: block;
+  }
+  body header{
+    display: block;
+    height:50px;
+    width: 100%;
+    margin: auto;
+  }
+  header img.imgLogo{
+    display: block;
+    width: 150px;
+    height: 50px;
+  }
+
+
+  body header #vip {
+    display: none;
+  }
+  body header span{
+    display: none;
+  }
+
+  h1,h2,h3{
+    font-weight: bold;
+  }
+  h1{
+   font-size: 24px;
+ }
+ h2{
+  font-size: 22px;
+}
+h3,a{
+  font-size: $font-size;
+}
+p{
+  font-size: $font-size;
+  margin: 0px 10px;
+}
+a.links{
+  font-size: $font-size;
+  margin-left: 10px;
+}
+.fieldset header{
+ width: 100%;
+}
+
+/*Responsive Navigation*/
+
+div.responsiveNav{
+  display: block;
+  border:none;
+  border-top: 2px solid grey;
+  ul{
+    display: inline;
+    border-top: 2px solid grey;
+    li{
+      display: inline;
+      padding-top: 10px;
+      padding-left:2.5%;
+      padding-right: 2.5%;
+      align-content: center;
+      width: 19%;
+      float: left;
+      li.search{
+        display: none;
+      }
+    }
+  }
+}
+/*end of Responsive navigation*/
+
+
+
+
+/*Hamburger*/
+.hamburger {
+  max-height: 0;
+  overflow: hidden;
+  float: right;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+
+.hamburger ul.hor-nav {
+  float: none;
+  list-style-type: none;
+  background-color: $grey-color;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger ul>li {
+  display: block;
+  width: 100%;
+  background: $grey-color;
+  color: #fff;
+  border-top: 1px solid #4d4d4d;
+  float: none;
+  padding: 0px;
+}
+
+.hamburger ul>li:hover {
+  background: $grey;
+  color: #fff;
+}
+.hamburger ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 1px;
+  font-size: 16px;
+}
+
+.hamburger.menuOpen {
+  max-height: 1000px;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+
+div.clear{
+  clear: both;  
+}
+
+.searching{
+  display: none;
+}
+.searching.menuOpen {
+  max-height: 1000px;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  display: block;
+}
+ul.hor-nav li ul {
+  padding: 0;
+  position: static;
+  left: 0;
+  width: 100%;
+  margin-bottom: 1px;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+}
+ul.hor-nav li ul li {
+  background: $grey;
+  display: block;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 1px;
+  font-size: 16px;
+}
+
+ul.hor-nav li ul li:hover {
+  background: $grey-color; 
+}
+
+ul.hor-nav li:hover ul {
+  display: none;
+  opacity: 1;
+  visibility: visible;
+} 
+ul.hor-nav li.open ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul.hor-nav li.search:hover {
+  background: none; 
+}
+
+span.plus{
+  display: inline;
+  right: 10px;
+  float: right;
+  position: absolute;
+  height: 40px;
+  top: 5px;
+  font-size: $font-size;
+}
+
+span.plus:before {
+  content: '+';
+  display: block;
+}
+
+li.open span.plus:before {
+  content: '-';
+}
+
+/*End of Hamburger*/
+/**Start of Categories-damsko,mujko,detsko i podkategoriite**/
+
+li.products{
+  width: 48%;
+  margin-bottom: 40px;
+  margin-top: $font-size;
+  margin: auto;
+
+}
+
+.productBox p{
+  height: $font-size;
+  font-size: 16px;
+}
+/**End of Categories**/
+/***Start of description pages***/
+
+
+
+select{
+  font-size:16px;
+}
+.buy select{
+  font-size: 14px;
+}
+
+
+div.buy{
+  display: inline;
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  float: left;
+  margin-left: 10%;
+}
+
+
+summary img{
+  width: 300px; 
+  height: 125px;
+}
+fieldset.fieldset{
+  width: 50%;
+}
+
+
+/*Reg forms*/
+.regLog p.button input{
+  width: 40%;
+}
+
+}
+
+
+/* MOBILE */
+@media all and (max-width: 480px){
+  body header{
+    height: 50px;
+    width: 50%;
+    margin: auto;
+  }
+  section header{
+    width: 100%;
+  }
+
+  div,span,a,p,ul,li,table,th,td,tr,footer{
+    font-size:16px;
+  }
+  h1 {
+    font-size: $font-size;
+  }
+
+  a{
+    font-size: 16px;
+  }
+  p{
+    font-size: 16px;
+    margin: 0px 10px;
+  }
+  a.links{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+
+  /*carousel*/
+  .css-carousel {
+    width: 100%;
+    height: 183px;
+  .css-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+  /**Start of Categories-damsko,mujko,detsko i podkategoriite**/
+
+  li.products{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    
+  }
+  .productBox p{
+    height: $font-size;
+    font-size: 16px;
+  }
+  .firstArticle{
+  height: 300px;
+}
+
+  /**End of Categories**/
+
+  /*Promo page*/
+
+  img.descript{
+    display: inline;
+    float: left;
+    position: absolute;
+    width:150px;
+    height:230px;
+  }
+  .img-opacity img {
+   width: 150px;
+   height: 230px;
+ }
+ select{
+  font-size:15px;
+}
+.buy select{
+  font-size: 14px;
+}
+
+
+div.buy{
+  display: inline;
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  float: left;
+  margin-left: 10%;
+}
+summary img{
+  width: 300px; 
+  height: 125px;
+}
+
+
+li.promo{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.productBox span{
+  height: $font-size;
+  font-size: 16px;
+}
+
+
+/*End of Promo page*/
+
+
+/*REgister form*/
+
+.regLog{
+  width: 100%;
+  right: 0;
+}
+form{
+  width: 100%;
+}
+.keeplogin label{
+  width: 86%;
+}
+.regLog p.button input{
+  width: 47%;
+}
+}
