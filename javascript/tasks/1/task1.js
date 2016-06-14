@@ -6,6 +6,12 @@ console.log(something);
 console.log(typeof(undeclaredVariable));
 
 // String
+var someString="2+2+2";
+console.log(someString+"-"+typeof(someString));
+var otherString="";
+console.log(otherString+"-"+typeof(otherString));
+var thirdString=String("asfgdfgdfg");
+console.log(thirdString+"-"+typeof(thirdString));
 var myName = "Vessy";
 myName = "Veselinka";
 console.log("My name is " + myName + "-" + typeof(myName));
@@ -56,3 +62,6 @@ console.log(hot+"-"+typeof(hot));
 // Quated text
 var question='"How you doing"-Joey said';
 console.log(question+"-"+typeof(question));
+var question2="\"How you doing\"-Joey said";
+console.log(question2+"-"+typeof(question2));
+
