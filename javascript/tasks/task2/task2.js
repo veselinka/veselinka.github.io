@@ -1,6 +1,6 @@
 // Problem 1. Odd or Even
 // Write an expression that checks if given integer is odd or even.
-var oddOrEven = function(number) {
+function oddOrEven(number) {
     if (number % 2 == 0) {
         return console.log("False-The number is even");
     } else {
@@ -18,7 +18,7 @@ oddOrEven(0);
 // Problem 2. Divisible by 7 and 5
 // Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
 
-var divisible = function(num) {
+function divisible(num) {
     if ((num % 7 == 0) && (num % 5 == 0)) {
         return console.log("True - The number is divisible by 7 and 5");
     } else {
@@ -35,7 +35,7 @@ divisible(140);
 // Problem 3. Rectangle area
 // Write an expression that calculates rectangle’s area by given width and height.
 
-var area = function(width, height) {
+function area(width, height) {
     return console.log(width * height);
 }
 area(3, 4);
@@ -46,7 +46,7 @@ area(5, 5);
 // Write an expression that checks for given integer if its third digit (right-to-left) is 7.
 
 
-var str = function(n) {
+function str(n) {
     var nToString = n.toString();
      var duljina = nToString.length;
     if (duljina < 3) {
@@ -130,7 +130,7 @@ isPrime(-3);
 // Problem 8. Trapezoid area
 // Write an expression that calculates trapezoid's area by given sides a and b and height h.
 
-var trapezoid=function(a,b,h){
+function trapezoid(a,b,h){
 return console.log(((a+b)/2)*h);
 }
 trapezoid(5,7,12);
@@ -144,7 +144,7 @@ trapezoid(0.222,0.333,0.555);
 // Write an expression that checks for given point P(x, y) 
 // if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).
 
-var insideKandOutsideR = function (x,y){
+function insideKandOutsideR(x,y){
 	var insideK=Math.pow(x-1,2)+Math.pow(y-1,2)<=9;
 	var outsideR=x>=-1 && x<=5 && y>=-1 && y<=1;
 	if (insideK==true && outsideR==false){
