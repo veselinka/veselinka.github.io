@@ -130,16 +130,38 @@ isPrime(-3);
 // Problem 8. Trapezoid area
 // Write an expression that calculates trapezoid's area by given sides a and b and height h.
 
-// var trapezoid=function(a,b,h){
-// return console.log(((a+b)/2)*h);
-// }
-// trapezoid(5,7,12);
-// trapezoid(2,1,33);
-// trapezoid(8.5,4.3,2.7);
-// trapezoid(100,200,300);
-// trapezoid(0.222,0.333,0.555);
+var trapezoid=function(a,b,h){
+return console.log(((a+b)/2)*h);
+}
+trapezoid(5,7,12);
+trapezoid(2,1,33);
+trapezoid(8.5,4.3,2.7);
+trapezoid(100,200,300);
+trapezoid(0.222,0.333,0.555);
 
 
 // Problem 9. Point in Circle and outside Rectangle
 // Write an expression that checks for given point P(x, y) 
 // if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).
+
+var insideKandOutsideR = function (x,y){
+	var insideK=Math.pow(x-1,2)+Math.pow(y-1,2)<=9;
+	var outsideR=x>=-1 && x<=5 && y>=-1 && y<=1;
+	if (insideK==true && outsideR==false){
+		console.log("yes");
+	}
+	else{
+		console.log("no");
+	}
+}
+insideKandOutsideR(-1,1);
+insideKandOutsideR(1,4);
+insideKandOutsideR(3,2);
+insideKandOutsideR(0,1);
+insideKandOutsideR(4,1);
+insideKandOutsideR(2,0);
+insideKandOutsideR(4,0);
+insideKandOutsideR(2.5,1.5);
+insideKandOutsideR(3.5,1.5);
+insideKandOutsideR(-100,-100);
+
