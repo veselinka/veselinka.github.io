@@ -28,7 +28,7 @@ if (arr1 > arr2) {
 // Write a script that finds the maximal sequence of equal elements in an array.
 
 console.log("Problem 3:");
-var array = [15, 7, 3, 6, 8, 9, 5, 9, 9, 9, 3, 2];
+var array = [15, 7, 3, 6, 8,4,4,4,4,4,4, 9, 5, 9, 9, 9, 3, 2];
 var len = array.length;
 var counter = 0;
 var number = 0;
