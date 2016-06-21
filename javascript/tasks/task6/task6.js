@@ -50,12 +50,12 @@ occurenceOfWord();
 // Write a function to count the number of div elements on the web page
 console.log("Problem 4");
 
-function divCounter() {
-    var count;
-    count = document.getElementsByTagName('div').length;
-    return count;
-}
-console.log(divCounter());
+// function divCounter() {
+//     var count;
+//     count = document.getElementsByTagName('div').length;
+//     return count;
+// }
+// console.log(divCounter());
 
 
 
@@ -73,7 +73,6 @@ function appearanceCount(number) {
         if (number === array[i]) {
             counter++;
         }
-
     }
     console.log(counter);
 }
