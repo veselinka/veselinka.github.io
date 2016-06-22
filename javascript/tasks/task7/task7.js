@@ -19,6 +19,8 @@ if ( (distance < a + b) && (a<distance+b) && (b<distance+a)) {
     console.log("no such triangle");
 }
 
+
+
 }
 triangle(2,6,4,1);
 triangle(1,1,2,2);
