@@ -79,21 +79,26 @@ console.log(obj.hasOwnProperty('ghghgf'));
 // Each person has properties firstname, lastname and age.
 console.log("Problem 5");
 
-function youngest() {
-    var people = [
-        { firstname: 'Veselinka', lastname: 'Blazheva', age: 45 },
+   var people = [
+        { firstname: 'Veselinka', lastname: 'Blazheva', age: 24 },
         { firstname: 'Petar', lastname: 'Petrov', age: 30 },
         { firstname: 'Petranka', lastname: 'Petrova', age: 40 },
+        { firstname: 'Ivanka', lastname: 'Ivanova', age: 17 },
 
     ];
     var minAge = people[0].age;
+    var index=0;
+function youngest() {
+ 
 
     for (var i = 0; i < people.length; i++) {
         if (people[i].age < minAge) {
             minAge = people[i].age;
-            console.log(people[i].age);
+            index=i;
+            
         }
     }
+    console.log("The youngest person is: "+people[index].firstname+" "+people[index].lastname+" - " + people[index].age+" years old.");
 }
 youngest();
 
