@@ -136,3 +136,18 @@ console.log(yongest);
 // Use Array#reduce
 // Use only array methods and no regular loops (for, while)
 console.log("Problem 6");
+
+var arr = generatedArray(4);
+
+var result = arr.reduce(function (group, item){
+    var letter = item.firstname[0];
+
+    if(!group[letter]){
+        group[letter] = [];
+    }
+    group[letter].push(item);
+    return group;
+
+});
+console.log(arr);
+console.log(result); 
