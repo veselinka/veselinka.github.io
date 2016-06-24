@@ -310,3 +310,39 @@ function stringFormat(format) {
     return format;
 }
 console.log(stringFormat(format, 1, 'Pesho', 'Gosho', '1245'));
+
+
+
+
+
+
+
+
+// Problem 12. Generate list
+// Write a function that creates a HTML <ul> using a template for every HTML <li>.
+// The source of the list should be an array of elements.
+// Replace all placeholders marked with –{…}– with the value of the corresponding property of the object.
+console.log("Problem 12");
+
+var temp1 = document.getElementById('list-item').innerHTML;
+var peopleList = "";
+
+
+function makeList() {
+    var people = [{ name: "Vesi", age: 24 }, { name: "Petranka", age: 30 }, { name: "Ivanka", age: 72 }];
+
+
+    for (var i = 0; i < people.length; i++) {
+        var template = temp1;
+        peopleList += "<li>";
+        template = template.replace(/-{name}-/, people[i].name);
+        template = template.replace(/-{age}-/, people[i].age);
+        peopleList += template;
+        peopleList += "</li>";
+    }
+    var result = "<ul>" + peopleList + "</ul>";
+    return result;
+}
+document.getElementById("list-item").innerHTML = makeList(); 
+
+console.log("---------------------------------"); 
