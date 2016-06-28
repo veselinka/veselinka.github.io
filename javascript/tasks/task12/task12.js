@@ -15,20 +15,20 @@
 // Throws if:
 // The provided DOM element is non-existant
 // The id is either not a string or does not select any DOM element
-var content = document.getElementById('container');
+var cont = document.getElementById('container');
 
-function throws(content) {
+function throws(cont) {
 
     var buttons = document.getElementsByClassName('button');
     var contents = document.getElementsByClassName('content');
     try {
-        if (typeof content !== 'string' && typeof content !== 'object') {
+        if (typeof cont !== 'string' && typeof cont !== 'object') {
             throw new Error('Invalid content type!');
         }
-        if (!(content)) {
+        if (!(cont)) {
             throw new Error('Invalid dom element or id');
         }
-        if (!(content instanceof HTMLElement)) {
+        if (!(cont instanceof HTMLElement)) {
             throw new Error('DOM element is non-existant');
         }
     } catch (e) {
@@ -63,4 +63,4 @@ function throws(content) {
         }, false);
     }
 }
-throws(content);
+throws(cont);
