@@ -21,8 +21,6 @@ function throws(content) {
 
     var buttons = document.getElementsByClassName('button');
     var contents = document.getElementsByClassName('content');
-
-
     try {
         if (typeof content !== 'string' && typeof content !== 'object') {
             throw new Error('Invalid content type!');
@@ -40,11 +38,8 @@ function throws(content) {
     for (var i = 0, len = buttons.length; i < len; i++) {
         buttons[i].innerHTML = 'Hide';
         buttons[i].addEventListener('click', function(ev) {
-
-
             var nextElement = (ev.target).nextElementSibling;
             var content;
-
             while (nextElement) {
                 if (nextElement.className === 'button') {
                     return 0;
@@ -56,7 +51,6 @@ function throws(content) {
                     nextElement = nextElement.nextElementSibling;
                 }
             }
-
             if (typeof(content) !== undefined) {
                 if (content.style.display === '') {
                     (ev.target).innerHTML = 'Show';
