@@ -1,0 +1,149 @@
+<!-- Task 1 - Just a table
+Define a function that sets the template inside a provided element.
+The template should generate the table with class .items-table following the rules:
+A data object is provided and it contains two properties:
+headers - an array of strings that should be used in the template to generate the headers of the table
+items - an array of objects, where every object has keys col1, col2 and col3 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="libs/jquery-3.0.0.min.js"></script>
+    <script src="libs/handlebars-v4.0.5.js"></script>
+    <style type="text/css">
+    table,
+    tr,
+    td,
+    th {
+        border: 1px solid black;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="tableDiv"></div>
+    <div id="secondDiv"></div>
+
+
+<!-- TASK1 -->
+
+    <script type="text/x-handlebars-template" id="table-template">
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th>#</th>{{#each headers}}
+                    <th>{{this}}</th>{{/each}}</tr>
+            </thead>
+            <tbody>
+                {{#items}}
+                <tr>
+                    <td>{{@index}}</td>
+                    <td>{{col1}}</td>
+                    <td>{{col2}}</td>
+                    <td>{{col3}}</td>
+                </tr>
+                {{/items}}
+            </tbody>
+        </table>
+    </script>
+    <script>
+    var table,
+        tableTemplateHtml,
+        tableTemplate;
+    table = {
+        headers: ['Vendor', 'Model', 'OS'],
+        items: [{
+            col1: 'Nokia',
+            col2: 'Lumia 920',
+            col3: 'Windows Phone'
+        }, {
+            col1: 'LG',
+            col2: 'Nexus 5',
+            col3: 'Android'
+        }, {
+            col1: 'Apple',
+            col2: 'iPhone 6',
+            col3: 'iOS'
+        }]
+    };
+    tableTemplateHtml = document.getElementById('table-template').innerHTML;
+    tableTemplate = Handlebars.compile(tableTemplateHtml);
+    document.getElementById('tableDiv').innerHTML += tableTemplate(table);
+    </script>
+  
+
+
+<!-- TASK2 -->
+
+    <script type="text/x-handlebars-template" id="anchors-template">
+        <div class="container">
+            <h1>Animals</h1>
+            <ul class="animals-list">{{#each animals}}{{#if url}}
+                <li><a href="{{this.url}}">See a {{name}}</a></li>{{else}}
+                <li><a href="http://cdn.playbuzz.com/cdn/3170bee8-985c-47bc-bbb5-2bcb41e85fe9/d8aa4750-deef-44ac-83a1-f2b5e6ee029a.jpg">No link for {{name}} , here is Batman!</a></li>{{/if}} {{/each}}
+            </ul>
+        </div>
+    </script>
+    <script>
+    var data,
+        anchorsTemplateHtml,
+        anchorsTemplate;
+
+    data = {
+        animals: [{
+            name: 'Lion',
+            url: 'https://susanmcmovies.files.wordpress.com/2014/12/the-lion-king-wallpaper-the-lion-king-2-simbas-pride-4685023-1024-768.jpg'
+        }, {
+            name: 'Turtle',
+            url: 'http://www.enkivillage.com/s/upload/images/a231e4349b9e3f28c740d802d4565eaf.jpg'
+        }, {
+            name: 'Dog'
+        }, {
+            name: 'Cat',
+            url: 'http://i.imgur.com/Ruuef.jpg'
+        }, {
+            name: 'Dog Again'
+        }]
+    }
+    anchorsTemplateHtml = document.getElementById('anchors-template').innerHTML;
+    anchorsTemplate = Handlebars.compile(anchorsTemplateHtml);
+    document.getElementById('secondDiv').innerHTML += anchorsTemplate(data);
+    </script>
+
+
+<!-- TASK3 -->
+<!-- <ul id="books-list" data-template="book-item-template"></ul>
+<script id="book-item-template" type="text/x-handlebars-template">
+  <li class="book-item">
+    <a href="/#books/{{id}}">
+      <strong>{{title}}</strong>
+    </a>
+  </li> 
+</script>   
+<script>
+
+
+(function($) {
+    $.fn.listview = function() {
+
+    }
+}(jQuery));
+ $('#books-list').listview(books);
+
+    var books,
+        anchorsTemplateHtml,
+        anchorsTemplate;
+
+    books = {
+        id: [1,2,3,4],
+        title:['JavaScript: The Good Parts','Secrets of the JavaScript Ninja','Core HTML5 Canvas','JavaScript Patterns' ]
+    }
+    anchorsTemplateHtml = document.getElementById('anchors-template').innerHTML;
+    anchorsTemplate = Handlebars.compile(anchorsTemplateHtml);
+    document.getElementById('secondDiv').innerHTML += anchorsTemplate(books);
+    </script> -->
+
+</body>
+
+</html>
