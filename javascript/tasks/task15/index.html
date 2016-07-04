@@ -20,16 +20,12 @@ items - an array of objects, where every object has keys col1, col2 and col3 -->
     }
     </style>
 </head>
-
 <body>
-    <div id="tableDiv"></div>
-    <div id="secondDiv"></div>
-
 
 <!-- TASK1 -->
-
-    <script type="text/x-handlebars-template" id="table-template">
-        <table class="items-table">
+    <div id="tableDiv"></div>
+  <script type="text/x-handlebars-template" id="table-template">
+ <table class="items-table">
             <thead>
                 <tr>
                     <th>#</th>{{#each headers}}
@@ -47,35 +43,9 @@ items - an array of objects, where every object has keys col1, col2 and col3 -->
             </tbody>
         </table>
     </script>
-    <script>
-    var table,
-        tableTemplateHtml,
-        tableTemplate;
-    table = {
-        headers: ['Vendor', 'Model', 'OS'],
-        items: [{
-            col1: 'Nokia',
-            col2: 'Lumia 920',
-            col3: 'Windows Phone'
-        }, {
-            col1: 'LG',
-            col2: 'Nexus 5',
-            col3: 'Android'
-        }, {
-            col1: 'Apple',
-            col2: 'iPhone 6',
-            col3: 'iOS'
-        }]
-    };
-    tableTemplateHtml = document.getElementById('table-template').innerHTML;
-    tableTemplate = Handlebars.compile(tableTemplateHtml);
-    document.getElementById('tableDiv').innerHTML += tableTemplate(table);
-    </script>
-  
-
 
 <!-- TASK2 -->
-
+    <div id="secondDiv"></div>
     <script type="text/x-handlebars-template" id="anchors-template">
         <div class="container">
             <h1>Animals</h1>
@@ -85,65 +55,19 @@ items - an array of objects, where every object has keys col1, col2 and col3 -->
             </ul>
         </div>
     </script>
-    <script>
-    var data,
-        anchorsTemplateHtml,
-        anchorsTemplate;
-
-    data = {
-        animals: [{
-            name: 'Lion',
-            url: 'https://susanmcmovies.files.wordpress.com/2014/12/the-lion-king-wallpaper-the-lion-king-2-simbas-pride-4685023-1024-768.jpg'
-        }, {
-            name: 'Turtle',
-            url: 'http://www.enkivillage.com/s/upload/images/a231e4349b9e3f28c740d802d4565eaf.jpg'
-        }, {
-            name: 'Dog'
-        }, {
-            name: 'Cat',
-            url: 'http://i.imgur.com/Ruuef.jpg'
-        }, {
-            name: 'Dog Again'
-        }]
-    }
-    anchorsTemplateHtml = document.getElementById('anchors-template').innerHTML;
-    anchorsTemplate = Handlebars.compile(anchorsTemplateHtml);
-    document.getElementById('secondDiv').innerHTML += anchorsTemplate(data);
-    </script>
-
 
 <!-- TASK3 -->
-<!-- <ul id="books-list" data-template="book-item-template"></ul>
-<script id="book-item-template" type="text/x-handlebars-template">
-  <li class="book-item">
-    <a href="/#books/{{id}}">
-      <strong>{{title}}</strong>
-    </a>
-  </li> 
-</script>   
-<script>
-
-
-(function($) {
-    $.fn.listview = function() {
-
-    }
-}(jQuery));
- $('#books-list').listview(books);
-
-    var books,
-        anchorsTemplateHtml,
-        anchorsTemplate;
-
-    books = {
-        id: [1,2,3,4],
-        title:['JavaScript: The Good Parts','Secrets of the JavaScript Ninja','Core HTML5 Canvas','JavaScript Patterns' ]
-    }
-    anchorsTemplateHtml = document.getElementById('anchors-template').innerHTML;
-    anchorsTemplate = Handlebars.compile(anchorsTemplateHtml);
-    document.getElementById('secondDiv').innerHTML += anchorsTemplate(books);
-    </script> -->
-
+<ul id="books-list" data-template="book-item-template"></ul>
+<script type="text/hanlebars-template" id="books-template" >
+    {{#each list}}
+    <li class="book-item">
+        <a href="/#books/{{id}}">
+            <strong>{{title}}</strong></a>
+        </a>
+    </li>
+    {{/each}}
+</script>
+    <script src="task15.js"></script>
 </body>
 
 </html>
