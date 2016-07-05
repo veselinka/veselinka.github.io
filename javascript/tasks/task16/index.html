@@ -3,29 +3,30 @@
 
 <head>
     <title></title>
-    <style>
-    .btn {
-        width: 192px;
-        height: 47px;
-        background: url(tile.png);
-        border-radius: 24px;
-        border: none;
-        -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1), 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-        box-shadow-blend-mode: multiply;
-        font-size: 16px;
-    }
-     a {
-        text-decoration: none;
-        color:#000;
-    } 
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <button class="btn">OK</button>
     <button class="btn">Cancel</button>
     <button class="btn"><a href="#">View more information</button>
+    <div id="menu">
+        <section><img id="bigDiv" src="http://placehold.it/500x400"></section>
+        <aside>
+            <img class="image" src="http://placehold.it/150x100" />
+            <img class="image" src="http://placehold.it/150x100" />
+            <img class="image" src="http://placehold.it/150x100" />
+        </aside>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><strong>HOME</strong></li>
+            <li><strong>ABOUT</strong></li>
+            <li><strong>MORE INFORMATION</strong></li>
+            <li><strong>CONTACTS</strong></li>
+        </ul>
+    </nav>
 </body>
 
 </html>
