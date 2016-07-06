@@ -1,0 +1,142 @@
+/*TASK1*/
+
+.btn {
+    background: url(tile.png);
+    border-radius: 22px;
+    border: none;
+    -webkit-box-shadow: inset 0px -5px 1px 0px rgba(0, 0, 0, 0.1), 0px 5px 8px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px -5px 1px 0px rgba(0, 0, 0, 0.1), 0px 5px 8px -1px rgb(0, 0, 0.2);
+    box-shadow: inset 0px -5px 1px 0px rgba(0, 0, 0, 0.1), 0px 5px 8px -1px rgba(0, 0, 0, 0.2);
+    box-shadow-blend-mode: multiply;
+    outline-style: none;
+    font-size: 16px;
+    font-family: "Arial";
+    padding: 13px 20px 13px 20px;
+}
+
+body>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    outline-style: none;
+    font-size: 16px;
+    font-family: "Arial";
+}
+
+#left {
+    background: url("button-left.png");
+    display: inline-block;
+    float: left;
+    width: 25px;
+    height: 57px;
+}
+
+#middle {
+    background: url("button.png");
+    display: inline-block;
+    float: left;
+    padding: 0 20px 0px 20px;
+    text-decoration: none;
+    height: 57px;
+}
+
+#text {
+    line-height: 2.5em;
+    color: #000;
+}
+
+#right {
+    background: url("button-right.png");
+    display: inline-block;
+    width: 25px;
+    height: 57px;
+}
+
+
+/*TASK2*/
+
+#menu {
+    margin: 20px 0px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+section {
+    margin: 50px;
+    float: left;
+}
+
+aside {
+    float: left;
+    width: 200px;
+    height: 500px;
+}
+
+#bigDiv {
+    -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, .50);
+    -moz-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.50);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.50);
+    box-shadow-blend-mode: multiply;
+}
+
+.image {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    display: block;
+    -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, .50);
+    -moz-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.50);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.50);
+    box-shadow-blend-mode: multiply;
+}
+
+.image:first-child {
+    margin-top: 50px;
+}
+
+
+/*TASK3*/
+
+nav {
+    width: 100%;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-image: url("task3.png");
+    height: 48px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #cfcfcf;
+    border-left: 1px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 20px 15px 20px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(167, 22, 46);
+    text-decoration: none;
+}
+
+li:first-child {
+    border-left: none;
+}
+
+li:last-child {
+    border-right: none;
+}
