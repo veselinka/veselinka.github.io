@@ -1,85 +1,330 @@
 /*Start of Reset*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 
 /*End of reset*/
 
+body {
+	background-color: #fff;
+}
+
 div#wrapper {
-  border: none;
-  width: 2030px;
- }
- nav{
-width: 100%;
-height: 59px;
-background-color: #333333;
+    border: none;
+    width: 100%;
+}
 
- }
-ul {
+h2 {
+    color: black;
+}
+
+
+/*Navigation*/
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 59px;
+    background-color: #333333;
+    z-index: 100;
+}
+
+span#user {
+    float: left;
+    height: 59px;
+    width: 55px;
+}
+
+#user_img {
+    margin: auto;
+    width: 15px;
+    height: 18px;
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+
+#middleNav {
+    width: 59.1%;
+    margin: auto;
+    height: 59px;
+}
+
+.firstUl {
     list-style-type: none;
-}
-
-li {
+    float: left;
     display: inline;
-    padding-top: 21px;
-}
-li a{
-     font-size: 17px;
-  font-family: "NeuzeitS";
-  color: rgb(255, 255, 255);
-  text-align: left;
-  text-decoration: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-right: 1px solid #000;
-
-
-}
-li a:last-child{
-border-right: none;
 }
 
+.firstUl .firstLi {
+    display: inline-block;
+    padding: 10px 5px;
+    float: left;
+    line-height: 42px;
+}
+
+.firstUl .firstLi a {
+    font-size: 17px;
+    font-family: "NeuzeitS";
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 1px solid #000;
+}
+
+nav ul li a:last-child {
+    border-right: none;
+}
+
+
+/*.firstUl .firstLi a:last-child {
+    border-right: none;
+}
+*/
+
+#search {
+    position: absolute;
+    right: 19px;
+    top: 20px;
+}
+
+
+/*Carousel*/
+
+#carouselDiv {
+    width: 100%;
+    background-color: #ebebe6;
+    margin-bottom: 21px;
+}
+
+#carousel {
+    z-index: -100;
+    width: 94.58%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carouselImg {
+    width: 100%;
+}
+
+
+/*Section*/
+
+section {
+    width: 59.1%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.first-flex {
+    -webkit-flex-direction: row;
+    /* Safari */
+    flex-direction: row;
+    display: inline-flex;
+    -webkit-justify-content: space-between;
+    /* Safari */
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    /* Safari */
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.articles {
+    width: 32%;
+    font-size: 13px;
+    font-family: "NeuzeitS";
+    color: rgb(150, 150, 150);
+}
+
+.articleImage {
+    width: 100%;
+}
+
+.article {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.readMore {
+    color: #00e1f5;
+}
+
+.articles h2 {
+    color: black;
+    text-transform: uppercase;
+}
+
+#second-flex {
+    -webkit-flex-direction: row;
+    /* Safari */
+    flex-direction: row;
+    display: inline-flex;
+    -webkit-justify-content: space-between;
+    /* Safari */
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    /* Safari */
+    flex-wrap: wrap;
+
+}
+
+.products {
+    width: 18.67%;
+    font-size: 14px;
+    font-family: "NeuzeitS";
+    color: rgb(50, 50, 50);
+}
+.productImage {
+    width: 100%;
+}
+
+
+.info{
+	width: 100%;
+}
+.rightSpan{
+	float: right;
+	  color: rgb(150, 150, 150);
+
+}
 
 
 
@@ -87,3 +332,22 @@ border-right: none;
 
 
 
+
+
+
+
+
+
+
+#logo {
+    float: left;
+    padding-top: 17.5px;
+}
+
+#search {
+    float: right;
+}
+
+#basket {
+    float: right;
+}
