@@ -20,10 +20,6 @@ $( document ).ready(function() {
             $('.hor-nav>li').removeClass('open');
             $(this).parent().toggleClass('open');
         }
-
-        
-
-
     });
 
 

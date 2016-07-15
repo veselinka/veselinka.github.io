@@ -164,111 +164,6 @@ h2 {
 
 /*Navigation*/
 
-
-/*nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 59px;
-    background-color: #333333;
-    z-index: 100;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-span#user {
-    float: left;
-    width: 2.7%;
-    display: flex;
-}
-
-#user_img {
-    margin: auto;
-    width: 15px;
-    height: 18px;
-    margin: auto;
-    position: absolute;
-    top: 20px;
-    left: 19px;
-}
-
-#imgLi {
-    margin: 0 0 0 0;
-    width: 100%;
-}
-
-#middleNav {
-    max-width: 1200px;
-    width: 59.1%;
-    margin: auto;
-    display: flex;
-}
-
-.firstUl {
-    list-style-type: none;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.firstUl .firstLi {
-    display: inline-block;
-    float: left;
-    margin-left: 2%;
-    margin-right: 4.83%;
-
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.firstUl .firstLi a {
-    font-size: 17px;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    text-decoration: none;
-    border-right: 1px solid #000;
-}
-
-.firstUl .firstLi:last-child a,
-.firstUl .firstLi:first-child a {
-  border-right: none;  
-}
-.firstUl .firstLi:first-child{
-    padding-right: 4.75%;
-    padding-left: 8.42%;
-}
-
-
-#searchBasket {
-    float: right;
-    width: 3.7%;
-    height: 59px;
-    display: flex;
-}
-
-#search {
-    margin: auto;
-    width: 57px;
-    height: 19px;
-    position: absolute;
-    top: 20px;
-}
-
-#search{
-    background: url('imgs/search.png') no-repeat 0 -2px;
-    width: 16px;
-    height: 17px;
-}
-
-#basket{
-    background: url('imgs/search.png') no-repeat -35px 0;
-    width: 22px;
-    height: 17px;
-}
-*/
-
 nav {
     position: absolute;
     top: 0;
@@ -346,9 +241,13 @@ span#user {
     letter-spacing: 1.7px;
 }
 
+.firstUl .firstLi:hover a {
+    color: #00e1f5;
+}
+
 .firstUl .firstLi:after {
     content: '';
-    width: 1px;
+    f width: 1px;
     height: 12px;
     background-color: #000;
     display: inline-block;
@@ -373,6 +272,59 @@ span#user {
     vertical-align: middle;
     position: absolute;
     top: 21px;
+}
+
+.searchPanel {
+    display: none;
+    z-index: 11111111111111;
+    background-color: #00e1f5;
+    top: 38px;
+    width: 500px;
+    position: absolute;
+    /* right: initial; */
+    right: -54px;
+}
+
+
+/*.open {
+    display: block;
+}*/
+
+#search {
+    float: left;
+    width: 80%;
+    height: 50px;
+    border: none;
+    background-color: #00e1f5;
+    outline-style: none;
+}
+
+#ui-id-1 {
+    border-top: 1px solid rgb(56, 129, 150);
+    background-color: #00e1f5;
+    letter-spacing: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+    z-index: 9999;
+}
+
+#searchArrow {
+    background: url('img/closeSearch.png') no-repeat 0 -1px;
+    width: 36px;
+    height: 31px;
+    z-index: 1111111;
+    margin-top: 9px;
+    float: left;
+}
+
+#closeSearch {
+    background: url('img/closeSearch.png') no-repeat -77px 0;
+    width: 30px;
+    height: 32px;
+    z-index: 1111111;
+    float: right;
+    margin-top: 9px;
+    margin-right: 10px;
 }
 
 #basket {
@@ -403,32 +355,30 @@ ul li:hover .dropdown {
     left: 0;
     width: 100%;
 }
-/*Clothing dropdown*/
+
 #clothing {
     z-index: 11111111111111;
     /*background-color: #00e1f5;*/
     width: 39.7%;
     margin-left: 33.7%;
 }
-#brands{
+
+#brands {
     width: 39.7%;
-    margin-left: 40.3%; 
+    margin-left: 40.3%;
 }
-/*.firstUl .firstLi #journalDwopdown{
+
+#journal {
+    width: 39.7%;
+    margin-left: 69.4%;
+}
+
+.journalList {
     text-align: left;
-    padding-top: 50px;
+    margin-top: 30px;
     padding-bottom: 26px;
-    display: block;
-    z-index: 11111111111111;
-    background-color: #00e1f5;
-    position: absolute;
-    top: 59px;
-    left: 0;
-    width: 100%;
-}*/
-
-
-
+    border: none;
+}
 
 .dropdownList {
     -webkit-column-count: 3;
@@ -443,14 +393,17 @@ ul li:hover .dropdown {
     padding-top: 19px;
     padding-bottom: 21px;
 }
-.firstLi .dropdownList .secondLi{
+
+.firstLi .dropdownList .secondLi,
+.firstLi .journalList .secondLi {
     line-height: initial;
 }
 
-.dropdownList .secondLi a {
+.dropdownList .secondLi a,
+.journalList .secondLi a {
     font-size: 17px;
     color: rgb(50, 50, 50) !important;
-      line-height: 1.529;
+    line-height: 1.529;
     text-align: left;
     padding-left: 0;
     margin-left: 0;
@@ -465,19 +418,10 @@ ul li:hover .dropdown {
     vertical-align: baseline;
     letter-spacing: 2px;
 }
-/*Brands*/
-
-
-
-
-
-
-
-
-
 
 
 /*Carousel*/
+
 .carousel-inner {
     width: 94.6%;
     margin-left: auto;
@@ -529,6 +473,71 @@ ul li:hover .dropdown {
 #myCarousel > a.left.carousel-control,
 #myCarousel > a.right.carousel-control {
     background-color: #ebebe6;
+}
+
+
+/*tekstovete v carousela- trqbva da se naglasqt razstoqniqta i
+ da se dobavi shrift na headinga i background-image-strelka na butona*/
+
+.leftText {
+    /*width: 325px;*/
+    width: 17.71%;
+    height: 295px;
+    line-height: 20px;
+    position: absolute;
+    left: 20.1%;
+    top: 33.3%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    /*border: 1px solid black;*/
+}
+
+.rightText {
+    /*width: 325px;*/
+    width: 17.71%;
+    height: 295px;
+    line-height: 20px;
+    position: absolute;
+    right: 20.1%;
+    top: 30.3%;
+    text-align: center;
+    color: #323232;
+    /*border: 1px solid black;*/
+}
+
+.blog,
+.feature {
+    font-size: 15px;
+    line-height: 1.933;
+    width: 100%;
+}
+
+.heading {
+    font-size: 40px;
+    font-family: "FuturaStd", sans-serif;
+    font-weight: bold;
+    line-height: 1.063;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.describe {
+    font-size: 14px;
+    line-height: 1.357;
+}
+
+.btnClass {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline-style: none;
+}
+
+.btnClass:hover {
+    background-color: #00e1f5;
 }
 
 
@@ -769,7 +778,7 @@ footer {
     background: url('img/icons-clicked.png') no-repeat -253px 0px;
     width: 29px;
     height: 22px;
-    padding-left: 5px;
+    padding-left: 56px;
 }
 
 #b {
@@ -973,4 +982,17 @@ a:focus {
 #closeBanner {
     float: right;
     margin-right: 19px;
+    padding-right: 15px;
+    background-image: url(img/close-banner.png);
+    background-repeat: no-repeat;
+    background-position: right 0% top 50%;
 }
+
+#closeBanner:hover {
+    background-image: url(img/x.png);
+    background-repeat: no-repeat;
+    color: #06dff3;
+}
+
+
+/*End of banner*/
