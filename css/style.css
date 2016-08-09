@@ -39,6 +39,8 @@ body {
     border-spacing: 0; }
 
 /*End of Reset*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 .facebook {
   background: url("../img/facebook.png") no-repeat; }
 
@@ -146,7 +148,9 @@ nav {
   text-align: center;
   width: 100%;
   margin-bottom: 30px;
-  display: inline-block; }
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  }
 
 ul.hor-nav {
 height:58px;
@@ -174,7 +178,9 @@ nav ul.hor-nav li.navig a {
   text-align: center;
   padding-left: 8px;
   padding-right: 8px;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
 
 nav ul.hor-nav li.search {
   float: right;
@@ -436,12 +442,13 @@ li.products {
   display: inline-block;
   margin-bottom: 20px;
   margin-top: 10px;
-  width: 33.07%;
+  width: 28%;
+  margin-right:5%;
   height: 440px; }
 
-
-
-
+li.products:nth-child(3){
+    margin-right:0;
+}
 
 
 div.productBox {
@@ -450,15 +457,16 @@ div.productBox {
   top: 20px;
   left: 0;
   right: 0;
-  width: 240px;
+  width: 100%;
   height: 390px;
-  border: 20px solid #F2F2F2; }
+  border: 23px solid #F2F2F2;
+  }
 
 div.productBox:active {
-  border: 20px solid #D3D3D3; }
+  border: 23px solid #D3D3D3; }
 
 div.productBox:hover {
-  border: 20px solid #D3D3D3; }
+  border: 23px solid #D3D3D3; }
 
 div.productBox img {
   transition: all 0.2s ease-in-out;
@@ -468,7 +476,7 @@ div.productBox img {
   -o-transition: all 0.2s ease-in-out;
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 35px;
   margin: auto; }
 
 div.productBox:hover img {
@@ -480,7 +488,7 @@ div.productBox:hover img {
 
 .productBox p {
   height: 30px;
-  width: 200px;
+  width: 100%;
   text-indent: 0px;
   position: absolute;
   top: 330px;
@@ -944,6 +952,21 @@ p.change_link {
   display: inline-block;
   color: #1da2c1;
   font-size: 16px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TABLETS */
 @media all and (max-width: 1024px) {
