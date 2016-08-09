@@ -953,6 +953,42 @@ p.change_link {
   color: #1da2c1;
   font-size: 16px; }
 
+.newslettersubscriptionsentform,.emails{
+  width:40%;
+  margin:auto;
+  border:5px solid #7BAEE0;
+  padding:5px 0 5px 0;
+  border-radius:10px;
+  height:auto;
+}
+
+.emails{
+  margin-top:20px;
+}
+
+.newslettersubscriptionsentform fieldset{
+  width:80%;
+  margin:auto;
+}
+.newslettersubscriptionsentform button{
+  float:right;
+  margin-right:1.5%;
+  margin-top:5px;
+  border-radius:15px;
+  background-color: #7BAEE0;
+  color:#FFF;
+  outline-style: none;
+  height:30px;
+}
+#sendFormMessage{
+  width:50%;
+  margin:auto;
+  font-size:50px;
+}
+
+
+
+
 
 
 
