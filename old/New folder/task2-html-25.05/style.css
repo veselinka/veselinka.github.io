@@ -1,0 +1,186 @@
+html{
+	height: 100%;
+}
+
+#wrapper{
+    border: none;
+    width: 75%;
+    min-height: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+	text-align: center;
+	height: 50px;
+	width: auto;
+}
+
+img.imgLogo{
+	float: left;
+}
+img,h1 {
+	display: inline;
+}
+span{
+	float: right;
+}
+nav{
+	text-align: center;
+	width: 100%;
+}
+ul.hor-nav li.search{
+	float: right;
+}
+
+li.navig {
+	display: inline;
+}
+div,span,a,p,ul,footer{
+	font-size:20px;
+}
+
+ul.hor-nav {
+	float: left;
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff3300;
+	width: 100%;
+}
+
+
+ul.hor-nav li {
+	float: left;
+	display: inline;
+}
+
+ul.hor-nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+aside{
+	width: 30%;
+	float: left;
+	display: block;
+}
+section{
+	width: 70%;
+	float: right;
+	display: block;
+}
+
+
+article span {
+	text-align: justify;
+}
+section.reg{
+	width: 100%;
+}
+
+
+li.products{
+	display: inline-block;
+	margin-left: 2.5%;
+	margin-right: 2,5%;
+	width: 30%;
+}
+li.promo{
+		display: inline-block;
+}
+
+p.aboutUs{
+	text-align: justify;
+}
+select{
+	font-size:1em;
+}
+
+img.descript{
+	float: left;
+	display: inline;
+}
+div.buy{
+	display: inline;
+}
+
+fieldset{
+	font-size: 1em;
+}
+
+label.label {
+	width:200px;
+	display: inline-block;
+}
+
+
+
+
+.navigation{
+	width: 100%;
+}
+
+
+.firstArticle{
+	height: 350px;
+}
+
+div.clear{
+	clear: both;
+}
+
+table.descr-name{
+	margin: auto;
+}
+
+fieldset.fieldset{
+	width: 50%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div.login, div.contact{
+	width: 50%;
+	margin: auto;	
+}
+
+
+
+/*
+fieldset legend { display: none; }
+*/
+
+
+
+.menu {
+	overflow: auto; position:relative; z-index:2; 
+}
+.parent-menu {
+	background-color: #ff3300; min-width:200px; float:left;
+	}
+	 .menu ul { 
+		list-style-type:none; 
+	}
+	.menu ul li a { 
+		padding:10px 15px; display:block; color:#fff; text-decoration:none;
+	}
+	.menu ul li a:hover
+	{ 
+		background-color:#007ee9; 
+	}
+
+
+	footer{
+		display: block;
+		bottom:0px;
+		float: left;
+		width: 100%;
+		text-align: center;
+	}

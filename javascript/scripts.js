@@ -35,6 +35,18 @@ $( document ).ready(function() {
 
 });
 
+var minPrice=jQuery(this).data('min-price');
+var maxPrice=jQuery(this).data('max-price');
+var selectedPrice=minPrice+"&"+maxPrice;
+hrefString.join("&")+selectedPrice
 
 
 
+            if(selectedPrice!==("undefined&undefined")){
+                hrefString+="&"+selectedPrice;
+            }
+
+
+?pmax=76&prefn1=clothingSize&prefn2=productType&prefv3=black&pmin=51&prefv1=8%7C10&prefv2=Board%20Short%7CDresses&prefn3=refinementColor
+
+?pmax=76&prefn1=clothingSize&prefn2=productType&prefv3=black%7Cgrey&prefv4=Skinny&pmin=51&prefv1=8%7C10&prefv2=Board%20Short%7CDresses&prefn3=refinementColor&prefn4=style

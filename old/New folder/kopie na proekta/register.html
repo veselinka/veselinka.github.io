@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="online shop">
+	<meta name="keywords" content="online shopping, clothes">
+	<meta name="author" content="Veselinka Blazheva">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/vip-favicon.ico" type="image/x-icon"/>
+	<link href='https://fonts.googleapis.com/css?family=Tenor+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="index.html"><img src="img/logo.png" alt="logo" width="150" height="50" title="online-shop-logo" class="imgLogo"/></a>
+			<h1>Онлайн Магазин ВИП</h1>
+		</header>
+
+<div class="responsiveNav">
+	<ul>
+		<li><a class="menuExpand" href="#"><img src="img/hamburger.png" alt="hamburgerMenu" width="20" height="20"></a></li>
+		<li><a class="login" href="login.html"><img src="img/login.png" alt="login" width="20" height="20"></a></li>
+		<li><a class="reg" href="register.html"><img src="img/reg.png" alt="register" width="20" height="20"></a></li>
+		<li><a class="searchPanel" href="#"><img src="img/search.png" alt="search" width="20" height="20"></a></li>
+	</ul>
+
+	<div class="clear"></div>
+	
+	<div class="searching">
+		<form method="post" action="#">
+			<input type="search" >
+			<input type="button" name="search" value="Търсене">
+		</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	<nav class="hamburger">
+			<ul class="hor-nav">
+				<li class="navig">
+					<a href="damsko.html" class="subHamburger">Дамско</a>
+					<span class="plus">+</span>
+					<ul>
+						<li>
+							<a href="rokli.html"> Рокли</a>
+						</li>
+						<li>
+							<a href="tuniki.html">Туники</a>
+						</li>
+					</ul>
+
+					<li class="navig"><a href="mujko.html" class="subHamburger"> Мъжко</a>
+					<span class="plus">+</span>
+					<ul>
+						<li>
+							<a href="rizi.html"> Ризи</a>
+						</li>
+						<li>
+							<a href="teniski.html">Тениски</a>
+						</li>
+					</ul>
+					</li>
+					<li class="navig"><a href="detsko.html" class="subHamburger"> Детско</a>
+					<span class="plus">+</span>
+					<ul>
+						<li>
+							<a href="komplekti.html">Комплекти</a>
+						</li>
+						<li>
+							<a href="gashterizoni.html">Гащеризони</a>
+						</li>
+					</ul>
+					</li>
+					<li class="navig"><a href="promotions.html"> Промоции</a></li>
+					<li class="navig"><a href="voucher.html"> Ваучери</a></li>
+					<li class="navig"><a href="contacts.html"> Контакти</a></li>
+					<li class="navig"><a href="aboutUs.html"> За нас </a></li>
+				</ul>
+			</nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<nav class="horizontal">
+			<ul class="hor-nav">
+				<li class="navig">
+					<a href="damsko.html">Дамско</a>
+					<ul>
+						<li>
+							<a href="rokli.html"> Рокли</a>
+						</li>
+						<li>
+							<a href="tuniki.html">Туники</a>
+						</li>
+					</ul>
+
+					<li class="navig"><a href="mujko.html"> Мъжко</a>
+					<ul>
+						<li>
+							<a href="rizi.html"> Ризи</a>
+						</li>
+						<li>
+							<a href="teniski.html">Тениски</a>
+						</li>
+					</ul>
+					</li>
+					<li class="navig"><a href="detsko.html"> Детско</a>
+					<ul>
+						<li>
+							<a href="komplekti.html">Комплекти</a>
+						</li>
+						<li>
+							<a href="gashterizoni.html">Гащеризони</a>
+						</li>
+					</ul>
+					</li>
+					<li class="navig"><a href="promotions.html"> Промоции</a></li>
+					<li class="navig"><a href="voucher.html"> Ваучери</a></li>
+					<li class="navig"><a href="contacts.html"> Контакти</a></li>
+					<li class="navig"><a href="aboutUs.html"> За нас </a></li>
+<!-- 					<li class="search">
+						<form method="post" action="#">
+							<input type="search">
+							<input type="button" name="search" value="Търсене">
+						</form>
+					</li> -->
+				</ul>
+
+			</nav>
+		<section class="reg">
+			<header><h2>Регистрация</h2></header>
+			<form method="post" action="#">
+				<fieldset class="fieldset">
+					<label for="username" class="label">Потребителско име:</label>
+					<input id="username" name="username" type="text" maxlength="15" minlength="3" autofocus placeholder="От 3 до 15 символа" required><br>
+
+					<label for="pass" class="label">Парола:</label>
+					<input id="pass" type="password" required> <br>
+
+					<label for="password" class="label">Повторете паролата:</label>
+					<input id="password" type="password" required> <br>
+
+					<label for="firstName" class="label">Име:</label>
+					<input id="firstName" type="text" name="firstname"><br>
+
+					<label for="lastName" class="label">Фамилия:</label>
+					<input id="lastName" type="text" name="lastname"><br>
+
+					<label for="phone" class="label">Телефон:</label>
+					<input id="phone" type="tel"><br>
+
+					<label for="gender" class="label">Пол:</label>
+					<input type="radio" name="gender" id="male" value="male">
+					<label for="male">Мъж</label>
+					<input type="radio" name="gender" id="female" value="female">
+					<label for="female">Жена</label><br>
+
+					<label for="age" class="label">Възраст:</label>
+					<input id="age" type="number" min="5" max="100" step="1" value="20" name="age"> <br>
+
+					<label for="date" class="label">Дата на раждане:</label>
+					<input id="date" type="date" name="birthday"> <br>
+
+					<label for="city" class="label">Град:</label>
+					<input id="city" type="text" name="city"> <br>
+
+					<label for="mail" class="label">E-mail:</label>
+					<input id="mail" type="email" name="email" placeholder="qwerty@abv.bg" required> <br>
+
+					<button type="submit" class="button"> Submit</button>
+					<button type="reset" class="button">Reset</button>
+				</fieldset>
+			</form>
+		</section>
+		<footer>
+			<hr>
+			<ul id="footerNav">
+				<li><a href="index.html">Начало</a> </li>
+				<li><a href="contacts.html"> Контакти</a> </li>
+				<li><a href="aboutUs.html"> За нас </a></li>
+			</ul>
+			<p> &copy; Всички права запазени!</p>
+			<p> &trade; 2016</p>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,475 @@
+
+/*Start of Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*End of Reset*/
+
+
+html{
+	height: 100%;
+}
+body{
+	font-family:;
+	line-height: 1.5;
+}
+
+
+h1 {
+	font-size: 2em;font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+h2 { font-size: 1.5em;font-weight: bold;	padding-top: 0.5em;}
+h3 { font-size: 1.17em;font-weight: bold;	padding-top: 0.5em;
+	padding-bottom: 0.5em;}
+h4 {font-size: 1.00em;font-weight: bold;}
+h5 { font-size: 0.83em;font-weight: bold;}
+h6 { font-size: 0.67em; font-weight: bold;}
+
+
+
+
+div#wrapper{
+    border: none;
+    width: 75%;
+    min-height: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+	text-align: center;
+	height: 50px;
+	width: 100%;
+}
+
+img.imgLogo{
+	float: left;
+}
+img,h1 {
+	display: inline;
+}
+span{
+	float: right;
+}
+nav{
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+
+ul.hor-nav li.search{
+	float: right;
+}
+
+div,span,a,p,ul,footer{
+	font-size:20px;
+}
+
+ul.hor-nav {
+	float: left;
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #ff3300;
+	width: 100%;
+
+}
+
+ul.hor-nav li.navig {
+	float: left;
+	display: block;
+	margin-right: 1px;
+}
+
+
+
+
+nav ul.hor-nav li.navig a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+ul.hor-nav {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+ul.hor-nav>li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 5px 10px;
+  background: #ff3300;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+}
+
+ul.hor-nav> li:hover {
+  background: #007ee9;
+  color: #fff;
+}
+
+
+ul.hor-nav li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  margin-top: 9px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  z-index: 5;
+}
+
+ul.hor-nav li ul li {
+  background: #007ee9;
+  display: block;
+  color: #fff;
+}
+
+ul.hor-nav li ul li:hover { background: #ff3300; }
+
+ul.hor-nav li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+ul.hor-nav li.search:hover { background: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside{
+	width: 25%;
+	float: left;
+	display: block;
+	z-index: 1;
+}
+section{
+	width: 75%;
+	float: right;
+	display: block;
+	z-index: 1;
+}
+
+
+article span {
+	text-align: justify;
+}
+section.reg{
+	width: 100%;
+}
+
+
+li.products{
+	display: inline-block;
+	margin-left: 2.5%;
+	margin-right: 2,5%;
+	width: 30%;
+}
+li.promo{
+		display: inline-block;
+}
+
+p.aboutUs{
+	text-align: justify;
+}
+select{
+	font-size:1em;
+}
+
+img.descript{
+	float: left;
+	display: inline;
+}
+div.buy{
+	display: inline;
+}
+
+fieldset{
+	font-size: 1em;
+}
+
+label.label {
+	width:200px;
+	display: inline-block;
+}
+
+
+/*
+
+img.image{
+	position: relative;
+}
+img.finished{
+	position: absolute;
+	bottom: 0px;
+	padding:auto;
+	width:200px;
+}
+
+*/
+
+
+
+.navigation{
+	width: 100%;
+}
+
+
+.firstArticle{
+	height: 350px;
+}
+
+div.clear{
+	clear: both;
+}
+
+table.descr-name{
+	margin: auto;
+}
+
+fieldset.fieldset{
+	width: 50%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div.login, div.contact{
+	width: 50%;
+	margin: auto;	
+}
+
+
+
+/*
+fieldset legend { display: none; }
+*/
+
+
+
+.menu {
+	overflow: auto; position:relative; z-index:2; 
+}
+.parent-menu {
+	background-color: #ff3300; width:80%; float:left;
+	}
+	 .menu ul { 
+		list-style-type:none; 
+	}
+	.menu ul li a { 
+		padding:10px 15px; display:block; color:#fff; text-decoration:none;
+	}
+	.menu ul li a:hover
+	{ 
+		background-color:#007ee9; 
+	}
+
+	footer{
+		display: block;
+		bottom:0px;
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+
+
+
+
+
+
+
+
+/*vtora proba za menu 
+
+
+.hor-nav ul { list-style-type:none; margin:1; padding:1; padding-top:7px; padding-bottom:5px; }
+ .hor-nav li { display:inline; }
+ .hor-nav a:link,a:visited { font-weight:bold; color:#CC3DD; background-color:#90EE90; text-align:center; padding:6px; text-decoration:italic; text-transform:uppercase; }
+  .hor-nav a:hover,a:active { background-color:#FF1493; }
+
+
+.hor-nav ul { padding:1; margin:1; list-style:none; }
+ .hor-nav li { float:left; position:relative; padding-right:100; display:block; border:4px solid #CC55FF; border-style:inset; } 
+ .hor-nav li ul { display:none; position:absolute; }
+  .hor-nav li:hover ul{ display:block; background:red; height:auto; width:8em; }
+  .hor-nav li ul li{ clear:both; border-style:none;}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* proba za menu
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: #efefef; 
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+
+nav ul li {
+	float: left;
+	display: block;
+	position: relative;
+	padding: 1;
+	margin: 1;
+	list-style: none;
+
+}
+	nav ul li:hover {
+		background: #4b545f;
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 25px 40px;
+		color: #757575; text-decoration: none;
+	}
+
+
+nav ul ul {
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+
+			*/
