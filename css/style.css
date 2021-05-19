@@ -476,7 +476,7 @@ div.productBox img {
   -o-transition: all 0.2s ease-in-out;
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 13px;
   margin: auto; }
 
 div.productBox:hover img {
